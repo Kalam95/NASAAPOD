@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AstronomyListViewController" customModule="NasaAPOD" customModuleProvider="target">
+            <connections>
+                <outlet property="dateTextField" destination="rr7-8s-KM3" id="tH9-ve-JvT"/>
+                <outlet property="tableView" destination="3Gr-J5-dRx" id="4GU-FX-EcL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYX-ZH-8Um">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="147.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zQz-bj-cKs">
+                            <rect key="frame" x="20" y="64" width="374" height="58.5"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select date to filter" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rr7-8s-KM3" customClass="DateTextField" customModule="NasaAPOD" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="** Swipe left to delete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g97-LP-ZLv">
+                                    <rect key="frame" x="0.0" y="44" width="374" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="XYg-sl-2EH"/>
+                    <color key="backgroundColor" red="0.1647058824" green="0.38823529410000002" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="XYg-sl-2EH" firstAttribute="bottom" secondItem="zQz-bj-cKs" secondAttribute="bottom" constant="25" id="QbP-kA-QI1"/>
+                        <constraint firstItem="zQz-bj-cKs" firstAttribute="top" secondItem="XYg-sl-2EH" secondAttribute="top" constant="20" id="atb-7y-dkk"/>
+                        <constraint firstItem="XYg-sl-2EH" firstAttribute="trailing" secondItem="zQz-bj-cKs" secondAttribute="trailing" constant="20" id="btf-pc-G01"/>
+                        <constraint firstItem="zQz-bj-cKs" firstAttribute="leading" secondItem="XYg-sl-2EH" secondAttribute="leading" constant="20" id="xbX-T7-8He"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3Gr-J5-dRx">
+                    <rect key="frame" x="0.0" y="147.5" width="414" height="748.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="yFr-Kc-Nf6"/>
+                        <outlet property="delegate" destination="-1" id="0nk-Si-JRF"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ZYX-ZH-8Um" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4Qf-hq-67f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3Gr-J5-dRx" secondAttribute="trailing" id="FqX-l3-P0J"/>
+                <constraint firstItem="3Gr-J5-dRx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MbW-g9-9zc"/>
+                <constraint firstAttribute="bottom" secondItem="3Gr-J5-dRx" secondAttribute="bottom" id="Vbv-bK-YLz"/>
+                <constraint firstItem="3Gr-J5-dRx" firstAttribute="top" secondItem="ZYX-ZH-8Um" secondAttribute="bottom" id="ZyY-Cg-oN2"/>
+                <constraint firstAttribute="trailing" secondItem="ZYX-ZH-8Um" secondAttribute="trailing" id="bvB-Wo-Yek"/>
+                <constraint firstItem="ZYX-ZH-8Um" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eng-bS-nVT"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+        </view>
+    </objects>
+</document>

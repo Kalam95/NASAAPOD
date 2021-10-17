@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PreviewViewCellIdentifier" id="gTV-IL-0wX" customClass="PreviewViewCell" customModule="PaybackAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="442" height="525"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="442" height="525"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzC-9F-s2F">
+                        <rect key="frame" x="0.0" y="0.0" width="442" height="525"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSK-qA-Gyo">
+                                <rect key="frame" x="0.0" y="0.0" width="442" height="525"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Va0-VD-UWp">
+                                        <rect key="frame" x="0.0" y="0.0" width="442" height="525"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Va0-VD-UWp" firstAttribute="leading" secondItem="BSK-qA-Gyo" secondAttribute="leading" id="Mqj-iE-H5v"/>
+                                    <constraint firstAttribute="trailing" secondItem="Va0-VD-UWp" secondAttribute="trailing" id="U2h-MT-g4e"/>
+                                    <constraint firstItem="Va0-VD-UWp" firstAttribute="leading" secondItem="BSK-qA-Gyo" secondAttribute="leading" id="VRb-GC-p9W"/>
+                                    <constraint firstAttribute="trailing" secondItem="Va0-VD-UWp" secondAttribute="trailing" id="aKE-gX-VXv"/>
+                                    <constraint firstAttribute="bottom" secondItem="Va0-VD-UWp" secondAttribute="bottom" id="tj4-kd-dA9"/>
+                                    <constraint firstItem="Va0-VD-UWp" firstAttribute="top" secondItem="BSK-qA-Gyo" secondAttribute="top" id="vUy-pE-jCr"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="BSK-qA-Gyo" secondAttribute="bottom" id="104-3e-aR0"/>
+                            <constraint firstItem="Va0-VD-UWp" firstAttribute="width" secondItem="kzC-9F-s2F" secondAttribute="width" id="AA1-4t-cZ6"/>
+                            <constraint firstAttribute="trailing" secondItem="BSK-qA-Gyo" secondAttribute="trailing" id="Gaf-QM-oME"/>
+                            <constraint firstItem="BSK-qA-Gyo" firstAttribute="top" secondItem="kzC-9F-s2F" secondAttribute="top" id="avM-2b-cxe"/>
+                            <constraint firstItem="Va0-VD-UWp" firstAttribute="height" secondItem="kzC-9F-s2F" secondAttribute="height" id="iwJ-SB-rou"/>
+                            <constraint firstItem="BSK-qA-Gyo" firstAttribute="leading" secondItem="kzC-9F-s2F" secondAttribute="leading" id="jRp-JE-e8n"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="1CW-Va-JpU"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="kzC-9F-s2F" secondAttribute="bottom" id="3pP-ox-0uI"/>
+                <constraint firstItem="kzC-9F-s2F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Qnr-Kk-qcE"/>
+                <constraint firstItem="kzC-9F-s2F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VB7-DI-xte"/>
+                <constraint firstAttribute="trailing" secondItem="kzC-9F-s2F" secondAttribute="trailing" id="zMt-SB-Mf6"/>
+            </constraints>
+            <size key="customSize" width="442" height="525"/>
+            <connections>
+                <outlet property="imageItem" destination="Va0-VD-UWp" id="ado-td-dlc"/>
+                <outlet property="scrollViewOutlet" destination="BSK-qA-Gyo" id="xoz-7N-1Gu"/>
+            </connections>
+            <point key="canvasLocation" x="-120" y="-11.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="375" height="251"/>
+    </resources>
+</document>

@@ -17,6 +17,54 @@
 		ACD8593C271C75EA00EC78B6 /* NasaAPODTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8593B271C75EA00EC78B6 /* NasaAPODTests.swift */; };
 		ACD85946271C75EA00EC78B6 /* NasaAPODUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85945271C75EA00EC78B6 /* NasaAPODUITests.swift */; };
 		ACD85948271C75EA00EC78B6 /* NasaAPODUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85947271C75EA00EC78B6 /* NasaAPODUITestsLaunchTests.swift */; };
+		ACD8599D271C762100EC78B6 /* PrimarySolidButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85956271C762100EC78B6 /* PrimarySolidButton.swift */; };
+		ACD8599E271C762100EC78B6 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85957271C762100EC78B6 /* SecondaryButton.swift */; };
+		ACD8599F271C762100EC78B6 /* DateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85959271C762100EC78B6 /* DateTextField.swift */; };
+		ACD859A0271C762100EC78B6 /* ImagePreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD8595B271C762100EC78B6 /* ImagePreviewView.xib */; };
+		ACD859A1271C762100EC78B6 /* ImagePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8595C271C762100EC78B6 /* ImagePreviewView.swift */; };
+		ACD859A2271C762100EC78B6 /* PreviewViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD8595E271C762100EC78B6 /* PreviewViewCell.xib */; };
+		ACD859A3271C762100EC78B6 /* PreviewViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8595F271C762100EC78B6 /* PreviewViewCell.swift */; };
+		ACD859A4271C762100EC78B6 /* PrimaryAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85961271C762100EC78B6 /* PrimaryAlertView.swift */; };
+		ACD859A5271C762100EC78B6 /* PrimaryAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD85962271C762100EC78B6 /* PrimaryAlertView.xib */; };
+		ACD859A6271C762100EC78B6 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85964271C762100EC78B6 /* ProgressView.swift */; };
+		ACD859A7271C762100EC78B6 /* ProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD85965271C762100EC78B6 /* ProgressView.xib */; };
+		ACD859A8271C762100EC78B6 /* DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85968271C762100EC78B6 /* DataResponse.swift */; };
+		ACD859A9271C762100EC78B6 /* GenericError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85969271C762100EC78B6 /* GenericError.swift */; };
+		ACD859AA271C762100EC78B6 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8596A271C762100EC78B6 /* CacheManager.swift */; };
+		ACD859AB271C762100EC78B6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8596B271C762100EC78B6 /* APIClient.swift */; };
+		ACD859AC271C762100EC78B6 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8596D271C762100EC78B6 /* NetworkClient.swift */; };
+		ACD859AD271C762100EC78B6 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8596E271C762100EC78B6 /* RequestType.swift */; };
+		ACD859AE271C762100EC78B6 /* Encodable+Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85971271C762100EC78B6 /* Encodable+Conversions.swift */; };
+		ACD859AF271C762100EC78B6 /* HTTPNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85973271C762100EC78B6 /* HTTPNetworkError.swift */; };
+		ACD859B0271C762100EC78B6 /* HTTPNetworkResponse+Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85974271C762100EC78B6 /* HTTPNetworkResponse+Handler.swift */; };
+		ACD859B1271C762100EC78B6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85975271C762100EC78B6 /* SessionManager.swift */; };
+		ACD859B2271C762100EC78B6 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85976271C762100EC78B6 /* NetworkLogger.swift */; };
+		ACD859B3271C762100EC78B6 /* SSLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85977271C762100EC78B6 /* SSLHandler.swift */; };
+		ACD859B4271C762100EC78B6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85979271C762100EC78B6 /* BaseViewController.swift */; };
+		ACD859B5271C762100EC78B6 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8597B271C762100EC78B6 /* CoreDataManager.swift */; };
+		ACD859B6271C762100EC78B6 /* APODCoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8597C271C762100EC78B6 /* APODCoreDataModel.swift */; };
+		ACD859B7271C762100EC78B6 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8597E271C762100EC78B6 /* Publisher.swift */; };
+		ACD859B8271C762100EC78B6 /* AppContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8597F271C762100EC78B6 /* AppContants.swift */; };
+		ACD859B9271C762100EC78B6 /* StyleGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85981271C762100EC78B6 /* StyleGuide+Extensions.swift */; };
+		ACD859BA271C762100EC78B6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85982271C762100EC78B6 /* UIView+Extensions.swift */; };
+		ACD859BB271C762100EC78B6 /* UIImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85983271C762100EC78B6 /* UIImageView+Download.swift */; };
+		ACD859BC271C762100EC78B6 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85984271C762100EC78B6 /* Date+Extensions.swift */; };
+		ACD859BD271C762100EC78B6 /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85985271C762100EC78B6 /* UITableView+Dequeue.swift */; };
+		ACD859BE271C762100EC78B6 /* MediaContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85989271C762100EC78B6 /* MediaContainerView.swift */; };
+		ACD859BF271C762100EC78B6 /* APODDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8598A271C762100EC78B6 /* APODDetailViewModel.swift */; };
+		ACD859C0271C762100EC78B6 /* APODDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8598B271C762100EC78B6 /* APODDetailViewController.swift */; };
+		ACD859C1271C762100EC78B6 /* APODDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD8598C271C762100EC78B6 /* APODDetailViewController.xib */; };
+		ACD859C2271C762100EC78B6 /* SearchAPODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8598E271C762100EC78B6 /* SearchAPODViewModel.swift */; };
+		ACD859C3271C762100EC78B6 /* SearchAPODViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD85990271C762100EC78B6 /* SearchAPODViewController.xib */; };
+		ACD859C4271C762100EC78B6 /* SearchAPODViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85991271C762100EC78B6 /* SearchAPODViewController.swift */; };
+		ACD859C5271C762100EC78B6 /* APODDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85993271C762100EC78B6 /* APODDataModel.swift */; };
+		ACD859C6271C762100EC78B6 /* APODAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85994271C762100EC78B6 /* APODAPI.swift */; };
+		ACD859C7271C762100EC78B6 /* AstronomyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85996271C762100EC78B6 /* AstronomyListViewModel.swift */; };
+		ACD859C8271C762100EC78B6 /* AstronomyDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85998271C762100EC78B6 /* AstronomyDataCell.swift */; };
+		ACD859C9271C762100EC78B6 /* AstronomyDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD85999271C762100EC78B6 /* AstronomyDataCell.xib */; };
+		ACD859CA271C762100EC78B6 /* AstronomyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8599A271C762100EC78B6 /* AstronomyListViewController.swift */; };
+		ACD859CB271C762100EC78B6 /* AstronomyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD8599B271C762100EC78B6 /* AstronomyListViewController.xib */; };
+		ACD859CC271C762100EC78B6 /* APODHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8599C271C762100EC78B6 /* APODHomeRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +99,54 @@
 		ACD85941271C75EA00EC78B6 /* NasaAPODUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaAPODUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD85945271C75EA00EC78B6 /* NasaAPODUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAPODUITests.swift; sourceTree = "<group>"; };
 		ACD85947271C75EA00EC78B6 /* NasaAPODUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAPODUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACD85956271C762100EC78B6 /* PrimarySolidButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimarySolidButton.swift; sourceTree = "<group>"; };
+		ACD85957271C762100EC78B6 /* SecondaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		ACD85959271C762100EC78B6 /* DateTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTextField.swift; sourceTree = "<group>"; };
+		ACD8595B271C762100EC78B6 /* ImagePreviewView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagePreviewView.xib; sourceTree = "<group>"; };
+		ACD8595C271C762100EC78B6 /* ImagePreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreviewView.swift; sourceTree = "<group>"; };
+		ACD8595E271C762100EC78B6 /* PreviewViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewViewCell.xib; sourceTree = "<group>"; };
+		ACD8595F271C762100EC78B6 /* PreviewViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewCell.swift; sourceTree = "<group>"; };
+		ACD85961271C762100EC78B6 /* PrimaryAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryAlertView.swift; sourceTree = "<group>"; };
+		ACD85962271C762100EC78B6 /* PrimaryAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrimaryAlertView.xib; sourceTree = "<group>"; };
+		ACD85964271C762100EC78B6 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		ACD85965271C762100EC78B6 /* ProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressView.xib; sourceTree = "<group>"; };
+		ACD85968271C762100EC78B6 /* DataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataResponse.swift; sourceTree = "<group>"; };
+		ACD85969271C762100EC78B6 /* GenericError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericError.swift; sourceTree = "<group>"; };
+		ACD8596A271C762100EC78B6 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		ACD8596B271C762100EC78B6 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		ACD8596D271C762100EC78B6 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		ACD8596E271C762100EC78B6 /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		ACD85971271C762100EC78B6 /* Encodable+Conversions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Conversions.swift"; sourceTree = "<group>"; };
+		ACD85973271C762100EC78B6 /* HTTPNetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPNetworkError.swift; sourceTree = "<group>"; };
+		ACD85974271C762100EC78B6 /* HTTPNetworkResponse+Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPNetworkResponse+Handler.swift"; sourceTree = "<group>"; };
+		ACD85975271C762100EC78B6 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		ACD85976271C762100EC78B6 /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		ACD85977271C762100EC78B6 /* SSLHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLHandler.swift; sourceTree = "<group>"; };
+		ACD85979271C762100EC78B6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		ACD8597B271C762100EC78B6 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		ACD8597C271C762100EC78B6 /* APODCoreDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODCoreDataModel.swift; sourceTree = "<group>"; };
+		ACD8597E271C762100EC78B6 /* Publisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
+		ACD8597F271C762100EC78B6 /* AppContants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContants.swift; sourceTree = "<group>"; };
+		ACD85981271C762100EC78B6 /* StyleGuide+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleGuide+Extensions.swift"; sourceTree = "<group>"; };
+		ACD85982271C762100EC78B6 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		ACD85983271C762100EC78B6 /* UIImageView+Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Download.swift"; sourceTree = "<group>"; };
+		ACD85984271C762100EC78B6 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		ACD85985271C762100EC78B6 /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
+		ACD85989271C762100EC78B6 /* MediaContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaContainerView.swift; sourceTree = "<group>"; };
+		ACD8598A271C762100EC78B6 /* APODDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODDetailViewModel.swift; sourceTree = "<group>"; };
+		ACD8598B271C762100EC78B6 /* APODDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODDetailViewController.swift; sourceTree = "<group>"; };
+		ACD8598C271C762100EC78B6 /* APODDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APODDetailViewController.xib; sourceTree = "<group>"; };
+		ACD8598E271C762100EC78B6 /* SearchAPODViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAPODViewModel.swift; sourceTree = "<group>"; };
+		ACD85990271C762100EC78B6 /* SearchAPODViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchAPODViewController.xib; sourceTree = "<group>"; };
+		ACD85991271C762100EC78B6 /* SearchAPODViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAPODViewController.swift; sourceTree = "<group>"; };
+		ACD85993271C762100EC78B6 /* APODDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODDataModel.swift; sourceTree = "<group>"; };
+		ACD85994271C762100EC78B6 /* APODAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODAPI.swift; sourceTree = "<group>"; };
+		ACD85996271C762100EC78B6 /* AstronomyListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstronomyListViewModel.swift; sourceTree = "<group>"; };
+		ACD85998271C762100EC78B6 /* AstronomyDataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstronomyDataCell.swift; sourceTree = "<group>"; };
+		ACD85999271C762100EC78B6 /* AstronomyDataCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AstronomyDataCell.xib; sourceTree = "<group>"; };
+		ACD8599A271C762100EC78B6 /* AstronomyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstronomyListViewController.swift; sourceTree = "<group>"; };
+		ACD8599B271C762100EC78B6 /* AstronomyListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AstronomyListViewController.xib; sourceTree = "<group>"; };
+		ACD8599C271C762100EC78B6 /* APODHomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODHomeRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +197,12 @@
 		ACD85920271C75E900EC78B6 /* NasaAPOD */ = {
 			isa = PBXGroup;
 			children = (
+				ACD85966271C762100EC78B6 /* APILayer */,
+				ACD85978271C762100EC78B6 /* BaseViewController */,
+				ACD8597A271C762100EC78B6 /* CoreData */,
+				ACD85986271C762100EC78B6 /* Modules */,
+				ACD85954271C762100EC78B6 /* SharedUI */,
+				ACD8597D271C762100EC78B6 /* Utilities+Reusable */,
 				ACD85921271C75E900EC78B6 /* AppDelegate.swift */,
 				ACD85923271C75E900EC78B6 /* SceneDelegate.swift */,
 				ACD85925271C75E900EC78B6 /* ViewController.swift */,
@@ -128,6 +230,248 @@
 				ACD85947271C75EA00EC78B6 /* NasaAPODUITestsLaunchTests.swift */,
 			);
 			path = NasaAPODUITests;
+			sourceTree = "<group>";
+		};
+		ACD85954271C762100EC78B6 /* SharedUI */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85955271C762100EC78B6 /* Buttons */,
+				ACD85958271C762100EC78B6 /* InputFields */,
+				ACD8595A271C762100EC78B6 /* ImagePreviewView */,
+				ACD85960271C762100EC78B6 /* Alerts */,
+				ACD85963271C762100EC78B6 /* ProgressView */,
+			);
+			path = SharedUI;
+			sourceTree = "<group>";
+		};
+		ACD85955271C762100EC78B6 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85956271C762100EC78B6 /* PrimarySolidButton.swift */,
+				ACD85957271C762100EC78B6 /* SecondaryButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		ACD85958271C762100EC78B6 /* InputFields */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85959271C762100EC78B6 /* DateTextField.swift */,
+			);
+			path = InputFields;
+			sourceTree = "<group>";
+		};
+		ACD8595A271C762100EC78B6 /* ImagePreviewView */ = {
+			isa = PBXGroup;
+			children = (
+				ACD8595B271C762100EC78B6 /* ImagePreviewView.xib */,
+				ACD8595C271C762100EC78B6 /* ImagePreviewView.swift */,
+				ACD8595D271C762100EC78B6 /* PreviewCollectionViewCells */,
+			);
+			path = ImagePreviewView;
+			sourceTree = "<group>";
+		};
+		ACD8595D271C762100EC78B6 /* PreviewCollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				ACD8595E271C762100EC78B6 /* PreviewViewCell.xib */,
+				ACD8595F271C762100EC78B6 /* PreviewViewCell.swift */,
+			);
+			path = PreviewCollectionViewCells;
+			sourceTree = "<group>";
+		};
+		ACD85960271C762100EC78B6 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85961271C762100EC78B6 /* PrimaryAlertView.swift */,
+				ACD85962271C762100EC78B6 /* PrimaryAlertView.xib */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		ACD85963271C762100EC78B6 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85964271C762100EC78B6 /* ProgressView.swift */,
+				ACD85965271C762100EC78B6 /* ProgressView.xib */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		ACD85966271C762100EC78B6 /* APILayer */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85967271C762100EC78B6 /* Models+Network+Generic */,
+				ACD8596A271C762100EC78B6 /* CacheManager.swift */,
+				ACD8596B271C762100EC78B6 /* APIClient.swift */,
+				ACD8596C271C762100EC78B6 /* NetworKClient */,
+				ACD8596F271C762100EC78B6 /* Networking+Helpers */,
+			);
+			path = APILayer;
+			sourceTree = "<group>";
+		};
+		ACD85967271C762100EC78B6 /* Models+Network+Generic */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85968271C762100EC78B6 /* DataResponse.swift */,
+				ACD85969271C762100EC78B6 /* GenericError.swift */,
+			);
+			path = "Models+Network+Generic";
+			sourceTree = "<group>";
+		};
+		ACD8596C271C762100EC78B6 /* NetworKClient */ = {
+			isa = PBXGroup;
+			children = (
+				ACD8596D271C762100EC78B6 /* NetworkClient.swift */,
+				ACD8596E271C762100EC78B6 /* RequestType.swift */,
+			);
+			path = NetworKClient;
+			sourceTree = "<group>";
+		};
+		ACD8596F271C762100EC78B6 /* Networking+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85970271C762100EC78B6 /* Encoding */,
+				ACD85972271C762100EC78B6 /* Service */,
+			);
+			path = "Networking+Helpers";
+			sourceTree = "<group>";
+		};
+		ACD85970271C762100EC78B6 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85971271C762100EC78B6 /* Encodable+Conversions.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		ACD85972271C762100EC78B6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85973271C762100EC78B6 /* HTTPNetworkError.swift */,
+				ACD85974271C762100EC78B6 /* HTTPNetworkResponse+Handler.swift */,
+				ACD85975271C762100EC78B6 /* SessionManager.swift */,
+				ACD85976271C762100EC78B6 /* NetworkLogger.swift */,
+				ACD85977271C762100EC78B6 /* SSLHandler.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		ACD85978271C762100EC78B6 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85979271C762100EC78B6 /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		ACD8597A271C762100EC78B6 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				ACD8597B271C762100EC78B6 /* CoreDataManager.swift */,
+				ACD8597C271C762100EC78B6 /* APODCoreDataModel.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		ACD8597D271C762100EC78B6 /* Utilities+Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				ACD8597E271C762100EC78B6 /* Publisher.swift */,
+				ACD8597F271C762100EC78B6 /* AppContants.swift */,
+				ACD85980271C762100EC78B6 /* Extensions */,
+			);
+			path = "Utilities+Reusable";
+			sourceTree = "<group>";
+		};
+		ACD85980271C762100EC78B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85981271C762100EC78B6 /* StyleGuide+Extensions.swift */,
+				ACD85982271C762100EC78B6 /* UIView+Extensions.swift */,
+				ACD85983271C762100EC78B6 /* UIImageView+Download.swift */,
+				ACD85984271C762100EC78B6 /* Date+Extensions.swift */,
+				ACD85985271C762100EC78B6 /* UITableView+Dequeue.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACD85986271C762100EC78B6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85987271C762100EC78B6 /* HomeModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		ACD85987271C762100EC78B6 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85988271C762100EC78B6 /* APODDetailsView */,
+				ACD8598D271C762100EC78B6 /* SearchView */,
+				ACD85995271C762100EC78B6 /* Favourites+History */,
+				ACD8599C271C762100EC78B6 /* APODHomeRouter.swift */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		ACD85988271C762100EC78B6 /* APODDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85989271C762100EC78B6 /* MediaContainerView.swift */,
+				ACD8598A271C762100EC78B6 /* APODDetailViewModel.swift */,
+				ACD8598B271C762100EC78B6 /* APODDetailViewController.swift */,
+				ACD8598C271C762100EC78B6 /* APODDetailViewController.xib */,
+			);
+			path = APODDetailsView;
+			sourceTree = "<group>";
+		};
+		ACD8598D271C762100EC78B6 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				ACD8598E271C762100EC78B6 /* SearchAPODViewModel.swift */,
+				ACD8598F271C762100EC78B6 /* ViewController */,
+				ACD85992271C762100EC78B6 /* APIs+Models */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		ACD8598F271C762100EC78B6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85990271C762100EC78B6 /* SearchAPODViewController.xib */,
+				ACD85991271C762100EC78B6 /* SearchAPODViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ACD85992271C762100EC78B6 /* APIs+Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85993271C762100EC78B6 /* APODDataModel.swift */,
+				ACD85994271C762100EC78B6 /* APODAPI.swift */,
+			);
+			path = "APIs+Models";
+			sourceTree = "<group>";
+		};
+		ACD85995271C762100EC78B6 /* Favourites+History */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85996271C762100EC78B6 /* AstronomyListViewModel.swift */,
+				ACD85997271C762100EC78B6 /* TableViewCells */,
+				ACD8599A271C762100EC78B6 /* AstronomyListViewController.swift */,
+				ACD8599B271C762100EC78B6 /* AstronomyListViewController.xib */,
+			);
+			path = "Favourites+History";
+			sourceTree = "<group>";
+		};
+		ACD85997271C762100EC78B6 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				ACD85998271C762100EC78B6 /* AstronomyDataCell.swift */,
+				ACD85999271C762100EC78B6 /* AstronomyDataCell.xib */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +578,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD859A7271C762100EC78B6 /* ProgressView.xib in Resources */,
+				ACD859C3271C762100EC78B6 /* SearchAPODViewController.xib in Resources */,
+				ACD859A2271C762100EC78B6 /* PreviewViewCell.xib in Resources */,
+				ACD859CB271C762100EC78B6 /* AstronomyListViewController.xib in Resources */,
 				ACD85931271C75EA00EC78B6 /* LaunchScreen.storyboard in Resources */,
+				ACD859C1271C762100EC78B6 /* APODDetailViewController.xib in Resources */,
+				ACD859A5271C762100EC78B6 /* PrimaryAlertView.xib in Resources */,
+				ACD859C9271C762100EC78B6 /* AstronomyDataCell.xib in Resources */,
+				ACD859A0271C762100EC78B6 /* ImagePreviewView.xib in Resources */,
 				ACD8592E271C75EA00EC78B6 /* Assets.xcassets in Resources */,
 				ACD85929271C75E900EC78B6 /* Main.storyboard in Resources */,
 			);
@@ -261,10 +613,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD859C8271C762100EC78B6 /* AstronomyDataCell.swift in Sources */,
+				ACD859B7271C762100EC78B6 /* Publisher.swift in Sources */,
+				ACD859B3271C762100EC78B6 /* SSLHandler.swift in Sources */,
+				ACD8599E271C762100EC78B6 /* SecondaryButton.swift in Sources */,
+				ACD859C2271C762100EC78B6 /* SearchAPODViewModel.swift in Sources */,
+				ACD859BD271C762100EC78B6 /* UITableView+Dequeue.swift in Sources */,
+				ACD859B8271C762100EC78B6 /* AppContants.swift in Sources */,
+				ACD859C6271C762100EC78B6 /* APODAPI.swift in Sources */,
+				ACD859AE271C762100EC78B6 /* Encodable+Conversions.swift in Sources */,
+				ACD859CC271C762100EC78B6 /* APODHomeRouter.swift in Sources */,
+				ACD859A1271C762100EC78B6 /* ImagePreviewView.swift in Sources */,
+				ACD859C4271C762100EC78B6 /* SearchAPODViewController.swift in Sources */,
+				ACD859BB271C762100EC78B6 /* UIImageView+Download.swift in Sources */,
+				ACD859A4271C762100EC78B6 /* PrimaryAlertView.swift in Sources */,
+				ACD859B4271C762100EC78B6 /* BaseViewController.swift in Sources */,
+				ACD859C5271C762100EC78B6 /* APODDataModel.swift in Sources */,
+				ACD859BC271C762100EC78B6 /* Date+Extensions.swift in Sources */,
+				ACD859C7271C762100EC78B6 /* AstronomyListViewModel.swift in Sources */,
+				ACD859C0271C762100EC78B6 /* APODDetailViewController.swift in Sources */,
 				ACD8592C271C75E900EC78B6 /* NasaAPOD.xcdatamodeld in Sources */,
 				ACD85926271C75E900EC78B6 /* ViewController.swift in Sources */,
+				ACD8599F271C762100EC78B6 /* DateTextField.swift in Sources */,
+				ACD859AA271C762100EC78B6 /* CacheManager.swift in Sources */,
+				ACD859BA271C762100EC78B6 /* UIView+Extensions.swift in Sources */,
+				ACD859B6271C762100EC78B6 /* APODCoreDataModel.swift in Sources */,
+				ACD859AC271C762100EC78B6 /* NetworkClient.swift in Sources */,
 				ACD85922271C75E900EC78B6 /* AppDelegate.swift in Sources */,
+				ACD859B2271C762100EC78B6 /* NetworkLogger.swift in Sources */,
+				ACD859AB271C762100EC78B6 /* APIClient.swift in Sources */,
+				ACD859AF271C762100EC78B6 /* HTTPNetworkError.swift in Sources */,
+				ACD859CA271C762100EC78B6 /* AstronomyListViewController.swift in Sources */,
+				ACD859B9271C762100EC78B6 /* StyleGuide+Extensions.swift in Sources */,
+				ACD859BE271C762100EC78B6 /* MediaContainerView.swift in Sources */,
+				ACD859AD271C762100EC78B6 /* RequestType.swift in Sources */,
+				ACD8599D271C762100EC78B6 /* PrimarySolidButton.swift in Sources */,
 				ACD85924271C75E900EC78B6 /* SceneDelegate.swift in Sources */,
+				ACD859B5271C762100EC78B6 /* CoreDataManager.swift in Sources */,
+				ACD859A3271C762100EC78B6 /* PreviewViewCell.swift in Sources */,
+				ACD859A8271C762100EC78B6 /* DataResponse.swift in Sources */,
+				ACD859A9271C762100EC78B6 /* GenericError.swift in Sources */,
+				ACD859B0271C762100EC78B6 /* HTTPNetworkResponse+Handler.swift in Sources */,
+				ACD859A6271C762100EC78B6 /* ProgressView.swift in Sources */,
+				ACD859BF271C762100EC78B6 /* APODDetailViewModel.swift in Sources */,
+				ACD859B1271C762100EC78B6 /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
