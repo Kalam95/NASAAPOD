@@ -9,12 +9,9 @@
 /* Begin PBXBuildFile section */
 		ACD85922271C75E900EC78B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85921271C75E900EC78B6 /* AppDelegate.swift */; };
 		ACD85924271C75E900EC78B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85923271C75E900EC78B6 /* SceneDelegate.swift */; };
-		ACD85926271C75E900EC78B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85925271C75E900EC78B6 /* ViewController.swift */; };
 		ACD85929271C75E900EC78B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD85927271C75E900EC78B6 /* Main.storyboard */; };
-		ACD8592C271C75E900EC78B6 /* NasaAPOD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACD8592A271C75E900EC78B6 /* NasaAPOD.xcdatamodeld */; };
 		ACD8592E271C75EA00EC78B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD8592D271C75EA00EC78B6 /* Assets.xcassets */; };
 		ACD85931271C75EA00EC78B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD8592F271C75EA00EC78B6 /* LaunchScreen.storyboard */; };
-		ACD8593C271C75EA00EC78B6 /* NasaAPODTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8593B271C75EA00EC78B6 /* NasaAPODTests.swift */; };
 		ACD85946271C75EA00EC78B6 /* NasaAPODUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85945271C75EA00EC78B6 /* NasaAPODUITests.swift */; };
 		ACD85948271C75EA00EC78B6 /* NasaAPODUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85947271C75EA00EC78B6 /* NasaAPODUITestsLaunchTests.swift */; };
 		ACD8599D271C762100EC78B6 /* PrimarySolidButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85956271C762100EC78B6 /* PrimarySolidButton.swift */; };
@@ -65,6 +62,10 @@
 		ACD859CA271C762100EC78B6 /* AstronomyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8599A271C762100EC78B6 /* AstronomyListViewController.swift */; };
 		ACD859CB271C762100EC78B6 /* AstronomyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD8599B271C762100EC78B6 /* AstronomyListViewController.xib */; };
 		ACD859CC271C762100EC78B6 /* APODHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8599C271C762100EC78B6 /* APODHomeRouter.swift */; };
+		ACD859CF271C767F00EC78B6 /* NasaAPOD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACD859CD271C767F00EC78B6 /* NasaAPOD.xcdatamodeld */; };
+		ACD859D4271C769800EC78B6 /* DetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD859D0271C769800EC78B6 /* DetailViewTests.swift */; };
+		ACD859D5271C769800EC78B6 /* APODMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD859D2271C769800EC78B6 /* APODMocks.swift */; };
+		ACD859D6271C769800EC78B6 /* searchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD859D3271C769800EC78B6 /* searchViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,14 +89,11 @@
 		ACD8591E271C75E900EC78B6 /* NasaAPOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaAPOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD85921271C75E900EC78B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACD85923271C75E900EC78B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ACD85925271C75E900EC78B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ACD85928271C75E900EC78B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ACD8592B271C75E900EC78B6 /* NasaAPOD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NasaAPOD.xcdatamodel; sourceTree = "<group>"; };
 		ACD8592D271C75EA00EC78B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACD85930271C75EA00EC78B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACD85932271C75EA00EC78B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACD85937271C75EA00EC78B6 /* NasaAPODTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaAPODTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACD8593B271C75EA00EC78B6 /* NasaAPODTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAPODTests.swift; sourceTree = "<group>"; };
 		ACD85941271C75EA00EC78B6 /* NasaAPODUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaAPODUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD85945271C75EA00EC78B6 /* NasaAPODUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAPODUITests.swift; sourceTree = "<group>"; };
 		ACD85947271C75EA00EC78B6 /* NasaAPODUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAPODUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -147,6 +145,10 @@
 		ACD8599A271C762100EC78B6 /* AstronomyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstronomyListViewController.swift; sourceTree = "<group>"; };
 		ACD8599B271C762100EC78B6 /* AstronomyListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AstronomyListViewController.xib; sourceTree = "<group>"; };
 		ACD8599C271C762100EC78B6 /* APODHomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODHomeRouter.swift; sourceTree = "<group>"; };
+		ACD859CE271C767F00EC78B6 /* NasaAPOD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NasaAPOD.xcdatamodel; sourceTree = "<group>"; };
+		ACD859D0271C769800EC78B6 /* DetailViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewTests.swift; sourceTree = "<group>"; };
+		ACD859D2271C769800EC78B6 /* APODMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODMocks.swift; sourceTree = "<group>"; };
+		ACD859D3271C769800EC78B6 /* searchViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,12 +207,11 @@
 				ACD8597D271C762100EC78B6 /* Utilities+Reusable */,
 				ACD85921271C75E900EC78B6 /* AppDelegate.swift */,
 				ACD85923271C75E900EC78B6 /* SceneDelegate.swift */,
-				ACD85925271C75E900EC78B6 /* ViewController.swift */,
 				ACD85927271C75E900EC78B6 /* Main.storyboard */,
 				ACD8592D271C75EA00EC78B6 /* Assets.xcassets */,
 				ACD8592F271C75EA00EC78B6 /* LaunchScreen.storyboard */,
 				ACD85932271C75EA00EC78B6 /* Info.plist */,
-				ACD8592A271C75E900EC78B6 /* NasaAPOD.xcdatamodeld */,
+				ACD859CD271C767F00EC78B6 /* NasaAPOD.xcdatamodeld */,
 			);
 			path = NasaAPOD;
 			sourceTree = "<group>";
@@ -218,7 +219,9 @@
 		ACD8593A271C75EA00EC78B6 /* NasaAPODTests */ = {
 			isa = PBXGroup;
 			children = (
-				ACD8593B271C75EA00EC78B6 /* NasaAPODTests.swift */,
+				ACD859D0271C769800EC78B6 /* DetailViewTests.swift */,
+				ACD859D3271C769800EC78B6 /* searchViewModelTests.swift */,
+				ACD859D1271C769800EC78B6 /* Mocks */,
 			);
 			path = NasaAPODTests;
 			sourceTree = "<group>";
@@ -474,6 +477,14 @@
 			path = TableViewCells;
 			sourceTree = "<group>";
 		};
+		ACD859D1271C769800EC78B6 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				ACD859D2271C769800EC78B6 /* APODMocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -545,6 +556,7 @@
 					};
 					ACD85936271C75EA00EC78B6 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 						TestTargetID = ACD8591D271C75E900EC78B6;
 					};
 					ACD85940271C75EA00EC78B6 = {
@@ -632,8 +644,6 @@
 				ACD859BC271C762100EC78B6 /* Date+Extensions.swift in Sources */,
 				ACD859C7271C762100EC78B6 /* AstronomyListViewModel.swift in Sources */,
 				ACD859C0271C762100EC78B6 /* APODDetailViewController.swift in Sources */,
-				ACD8592C271C75E900EC78B6 /* NasaAPOD.xcdatamodeld in Sources */,
-				ACD85926271C75E900EC78B6 /* ViewController.swift in Sources */,
 				ACD8599F271C762100EC78B6 /* DateTextField.swift in Sources */,
 				ACD859AA271C762100EC78B6 /* CacheManager.swift in Sources */,
 				ACD859BA271C762100EC78B6 /* UIView+Extensions.swift in Sources */,
@@ -655,6 +665,7 @@
 				ACD859A9271C762100EC78B6 /* GenericError.swift in Sources */,
 				ACD859B0271C762100EC78B6 /* HTTPNetworkResponse+Handler.swift in Sources */,
 				ACD859A6271C762100EC78B6 /* ProgressView.swift in Sources */,
+				ACD859CF271C767F00EC78B6 /* NasaAPOD.xcdatamodeld in Sources */,
 				ACD859BF271C762100EC78B6 /* APODDetailViewModel.swift in Sources */,
 				ACD859B1271C762100EC78B6 /* SessionManager.swift in Sources */,
 			);
@@ -664,7 +675,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD8593C271C75EA00EC78B6 /* NasaAPODTests.swift in Sources */,
+				ACD859D4271C769800EC78B6 /* DetailViewTests.swift in Sources */,
+				ACD859D6271C769800EC78B6 /* searchViewModelTests.swift in Sources */,
+				ACD859D5271C769800EC78B6 /* APODMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,6 +900,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -900,6 +914,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.NasaAPOD.NasaAPODTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NasaAPOD.app/NasaAPOD";
@@ -911,6 +926,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1016,13 +1032,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		ACD8592A271C75E900EC78B6 /* NasaAPOD.xcdatamodeld */ = {
+		ACD859CD271C767F00EC78B6 /* NasaAPOD.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				ACD8592B271C75E900EC78B6 /* NasaAPOD.xcdatamodel */,
+				ACD859CE271C767F00EC78B6 /* NasaAPOD.xcdatamodel */,
 			);
-			currentVersion = ACD8592B271C75E900EC78B6 /* NasaAPOD.xcdatamodel */;
-			path = NasaAPOD.xcdatamodeld;
+			currentVersion = ACD859CE271C767F00EC78B6 /* NasaAPOD.xcdatamodel */;
+			name = NasaAPOD.xcdatamodeld;
+			path = ../../../NasaAPOD/NasaAPOD/NasaAPOD.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
