@@ -10,7 +10,6 @@
 		ACD85922271C75E900EC78B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85921271C75E900EC78B6 /* AppDelegate.swift */; };
 		ACD85924271C75E900EC78B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85923271C75E900EC78B6 /* SceneDelegate.swift */; };
 		ACD85929271C75E900EC78B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD85927271C75E900EC78B6 /* Main.storyboard */; };
-		ACD8592E271C75EA00EC78B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD8592D271C75EA00EC78B6 /* Assets.xcassets */; };
 		ACD85931271C75EA00EC78B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD8592F271C75EA00EC78B6 /* LaunchScreen.storyboard */; };
 		ACD85946271C75EA00EC78B6 /* NasaAPODUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85945271C75EA00EC78B6 /* NasaAPODUITests.swift */; };
 		ACD85948271C75EA00EC78B6 /* NasaAPODUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85947271C75EA00EC78B6 /* NasaAPODUITestsLaunchTests.swift */; };
@@ -66,6 +65,7 @@
 		ACD859D4271C769800EC78B6 /* DetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD859D0271C769800EC78B6 /* DetailViewTests.swift */; };
 		ACD859D5271C769800EC78B6 /* APODMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD859D2271C769800EC78B6 /* APODMocks.swift */; };
 		ACD859D6271C769800EC78B6 /* searchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD859D3271C769800EC78B6 /* searchViewModelTests.swift */; };
+		ACD859D8271C786000EC78B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD859D7271C786000EC78B6 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +90,6 @@
 		ACD85921271C75E900EC78B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACD85923271C75E900EC78B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ACD85928271C75E900EC78B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ACD8592D271C75EA00EC78B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACD85930271C75EA00EC78B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACD85932271C75EA00EC78B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACD85937271C75EA00EC78B6 /* NasaAPODTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaAPODTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +148,7 @@
 		ACD859D0271C769800EC78B6 /* DetailViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewTests.swift; sourceTree = "<group>"; };
 		ACD859D2271C769800EC78B6 /* APODMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODMocks.swift; sourceTree = "<group>"; };
 		ACD859D3271C769800EC78B6 /* searchViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchViewModelTests.swift; sourceTree = "<group>"; };
+		ACD859D7271C786000EC78B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,7 +208,7 @@
 				ACD85921271C75E900EC78B6 /* AppDelegate.swift */,
 				ACD85923271C75E900EC78B6 /* SceneDelegate.swift */,
 				ACD85927271C75E900EC78B6 /* Main.storyboard */,
-				ACD8592D271C75EA00EC78B6 /* Assets.xcassets */,
+				ACD859D7271C786000EC78B6 /* Assets.xcassets */,
 				ACD8592F271C75EA00EC78B6 /* LaunchScreen.storyboard */,
 				ACD85932271C75EA00EC78B6 /* Info.plist */,
 				ACD859CD271C767F00EC78B6 /* NasaAPOD.xcdatamodeld */,
@@ -592,6 +592,7 @@
 			files = (
 				ACD859A7271C762100EC78B6 /* ProgressView.xib in Resources */,
 				ACD859C3271C762100EC78B6 /* SearchAPODViewController.xib in Resources */,
+				ACD859D8271C786000EC78B6 /* Assets.xcassets in Resources */,
 				ACD859A2271C762100EC78B6 /* PreviewViewCell.xib in Resources */,
 				ACD859CB271C762100EC78B6 /* AstronomyListViewController.xib in Resources */,
 				ACD85931271C75EA00EC78B6 /* LaunchScreen.storyboard in Resources */,
@@ -599,7 +600,6 @@
 				ACD859A5271C762100EC78B6 /* PrimaryAlertView.xib in Resources */,
 				ACD859C9271C762100EC78B6 /* AstronomyDataCell.xib in Resources */,
 				ACD859A0271C762100EC78B6 /* ImagePreviewView.xib in Resources */,
-				ACD8592E271C75EA00EC78B6 /* Assets.xcassets in Resources */,
 				ACD85929271C75E900EC78B6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
