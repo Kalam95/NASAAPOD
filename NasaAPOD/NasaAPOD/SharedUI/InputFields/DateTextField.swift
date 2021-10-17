@@ -15,6 +15,11 @@ class DateTextField: UITextField {
     var date: Date? {
         text?.isEmpty != false ? nil : datePicker.date
     }
+    var maximumDate: Date? {
+        willSet {
+            datePicker.maximumDate = newValue
+        }
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)

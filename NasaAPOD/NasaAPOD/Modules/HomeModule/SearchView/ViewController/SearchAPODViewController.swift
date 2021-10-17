@@ -56,6 +56,7 @@ class SearchAPODViewController: BaseViewController {
     }
 
     private func setupUI() {
+        dateTextField.maximumDate = Date()
         searchButton.isEnabled = false
         title = "APOD"
         viewHistoryButton.isEnabled = true

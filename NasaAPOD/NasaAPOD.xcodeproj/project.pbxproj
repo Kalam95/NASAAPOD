@@ -199,12 +199,12 @@
 		ACD85920271C75E900EC78B6 /* NasaAPOD */ = {
 			isa = PBXGroup;
 			children = (
-				ACD85966271C762100EC78B6 /* APILayer */,
-				ACD85978271C762100EC78B6 /* BaseViewController */,
-				ACD8597A271C762100EC78B6 /* CoreData */,
-				ACD85986271C762100EC78B6 /* Modules */,
 				ACD85954271C762100EC78B6 /* SharedUI */,
 				ACD8597D271C762100EC78B6 /* Utilities+Reusable */,
+				ACD8597A271C762100EC78B6 /* CoreData */,
+				ACD85966271C762100EC78B6 /* APILayer */,
+				ACD85978271C762100EC78B6 /* BaseViewController */,
+				ACD85986271C762100EC78B6 /* Modules */,
 				ACD85921271C75E900EC78B6 /* AppDelegate.swift */,
 				ACD85923271C75E900EC78B6 /* SceneDelegate.swift */,
 				ACD85927271C75E900EC78B6 /* Main.storyboard */,
@@ -442,8 +442,8 @@
 		ACD8598F271C762100EC78B6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				ACD85990271C762100EC78B6 /* SearchAPODViewController.xib */,
 				ACD85991271C762100EC78B6 /* SearchAPODViewController.swift */,
+				ACD85990271C762100EC78B6 /* SearchAPODViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
