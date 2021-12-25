@@ -149,9 +149,3 @@ public class NetworkClient: NSObject, NetworkClientType {
         self.headers = headers
     }
 }
-
-extension NetworkClient: URLSessionDelegate {
-    public func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-//        SSLHandler.didReceive(challenge: challenge, completionHandler: completionHandler)
-    }
-}

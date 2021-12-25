@@ -11,7 +11,6 @@
 		97928C8727777F57001C332D /* APODCoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8597C271C762100EC78B6 /* APODCoreDataModel.swift */; };
 		ACD85922271C75E900EC78B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85921271C75E900EC78B6 /* AppDelegate.swift */; };
 		ACD85924271C75E900EC78B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85923271C75E900EC78B6 /* SceneDelegate.swift */; };
-		ACD85929271C75E900EC78B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD85927271C75E900EC78B6 /* Main.storyboard */; };
 		ACD85931271C75EA00EC78B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD8592F271C75EA00EC78B6 /* LaunchScreen.storyboard */; };
 		ACD85946271C75EA00EC78B6 /* NasaAPODUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85945271C75EA00EC78B6 /* NasaAPODUITests.swift */; };
 		ACD85948271C75EA00EC78B6 /* NasaAPODUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85947271C75EA00EC78B6 /* NasaAPODUITestsLaunchTests.swift */; };
@@ -37,7 +36,6 @@
 		ACD859B0271C762100EC78B6 /* HTTPNetworkResponse+Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85974271C762100EC78B6 /* HTTPNetworkResponse+Handler.swift */; };
 		ACD859B1271C762100EC78B6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85975271C762100EC78B6 /* SessionManager.swift */; };
 		ACD859B2271C762100EC78B6 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85976271C762100EC78B6 /* NetworkLogger.swift */; };
-		ACD859B3271C762100EC78B6 /* SSLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85977271C762100EC78B6 /* SSLHandler.swift */; };
 		ACD859B4271C762100EC78B6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85979271C762100EC78B6 /* BaseViewController.swift */; };
 		ACD859B5271C762100EC78B6 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8597B271C762100EC78B6 /* CoreDataManager.swift */; };
 		ACD859B7271C762100EC78B6 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8597E271C762100EC78B6 /* Publisher.swift */; };
@@ -90,7 +88,6 @@
 		ACD8591E271C75E900EC78B6 /* NasaAPOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaAPOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD85921271C75E900EC78B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACD85923271C75E900EC78B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ACD85928271C75E900EC78B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACD85930271C75EA00EC78B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACD85932271C75EA00EC78B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACD85937271C75EA00EC78B6 /* NasaAPODTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaAPODTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,7 +116,6 @@
 		ACD85974271C762100EC78B6 /* HTTPNetworkResponse+Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPNetworkResponse+Handler.swift"; sourceTree = "<group>"; };
 		ACD85975271C762100EC78B6 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		ACD85976271C762100EC78B6 /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
-		ACD85977271C762100EC78B6 /* SSLHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLHandler.swift; sourceTree = "<group>"; };
 		ACD85979271C762100EC78B6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		ACD8597B271C762100EC78B6 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		ACD8597C271C762100EC78B6 /* APODCoreDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODCoreDataModel.swift; sourceTree = "<group>"; };
@@ -207,7 +203,6 @@
 				ACD85986271C762100EC78B6 /* Modules */,
 				ACD85921271C75E900EC78B6 /* AppDelegate.swift */,
 				ACD85923271C75E900EC78B6 /* SceneDelegate.swift */,
-				ACD85927271C75E900EC78B6 /* Main.storyboard */,
 				ACD859D7271C786000EC78B6 /* Assets.xcassets */,
 				ACD8592F271C75EA00EC78B6 /* LaunchScreen.storyboard */,
 				ACD85932271C75EA00EC78B6 /* Info.plist */,
@@ -355,7 +350,6 @@
 				ACD85974271C762100EC78B6 /* HTTPNetworkResponse+Handler.swift */,
 				ACD85975271C762100EC78B6 /* SessionManager.swift */,
 				ACD85976271C762100EC78B6 /* NetworkLogger.swift */,
-				ACD85977271C762100EC78B6 /* SSLHandler.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -600,7 +594,6 @@
 				ACD859A5271C762100EC78B6 /* PrimaryAlertView.xib in Resources */,
 				ACD859C9271C762100EC78B6 /* AstronomyDataCell.xib in Resources */,
 				ACD859A0271C762100EC78B6 /* ImagePreviewView.xib in Resources */,
-				ACD85929271C75E900EC78B6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,7 +620,6 @@
 			files = (
 				ACD859C8271C762100EC78B6 /* AstronomyDataCell.swift in Sources */,
 				ACD859B7271C762100EC78B6 /* Publisher.swift in Sources */,
-				ACD859B3271C762100EC78B6 /* SSLHandler.swift in Sources */,
 				ACD8599E271C762100EC78B6 /* SecondaryButton.swift in Sources */,
 				ACD859C2271C762100EC78B6 /* SearchAPODViewModel.swift in Sources */,
 				ACD859BD271C762100EC78B6 /* UITableView+Dequeue.swift in Sources */,
@@ -706,14 +698,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ACD85927271C75E900EC78B6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACD85928271C75E900EC78B6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ACD8592F271C75EA00EC78B6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -852,7 +836,6 @@
 				INFOPLIST_FILE = NasaAPOD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -879,7 +862,6 @@
 				INFOPLIST_FILE = NasaAPOD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
