@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97928C8627776F83001C332D /* NasaAPOD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97928C8427776F83001C332D /* NasaAPOD.xcdatamodeld */; };
+		97928C8727777F57001C332D /* APODCoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8597C271C762100EC78B6 /* APODCoreDataModel.swift */; };
 		ACD85922271C75E900EC78B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85921271C75E900EC78B6 /* AppDelegate.swift */; };
 		ACD85924271C75E900EC78B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85923271C75E900EC78B6 /* SceneDelegate.swift */; };
 		ACD85929271C75E900EC78B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD85927271C75E900EC78B6 /* Main.storyboard */; };
@@ -38,7 +40,6 @@
 		ACD859B3271C762100EC78B6 /* SSLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85977271C762100EC78B6 /* SSLHandler.swift */; };
 		ACD859B4271C762100EC78B6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85979271C762100EC78B6 /* BaseViewController.swift */; };
 		ACD859B5271C762100EC78B6 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8597B271C762100EC78B6 /* CoreDataManager.swift */; };
-		ACD859B6271C762100EC78B6 /* APODCoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8597C271C762100EC78B6 /* APODCoreDataModel.swift */; };
 		ACD859B7271C762100EC78B6 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8597E271C762100EC78B6 /* Publisher.swift */; };
 		ACD859B8271C762100EC78B6 /* AppContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8597F271C762100EC78B6 /* AppContants.swift */; };
 		ACD859B9271C762100EC78B6 /* StyleGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85981271C762100EC78B6 /* StyleGuide+Extensions.swift */; };
@@ -61,7 +62,6 @@
 		ACD859CA271C762100EC78B6 /* AstronomyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8599A271C762100EC78B6 /* AstronomyListViewController.swift */; };
 		ACD859CB271C762100EC78B6 /* AstronomyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD8599B271C762100EC78B6 /* AstronomyListViewController.xib */; };
 		ACD859CC271C762100EC78B6 /* APODHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8599C271C762100EC78B6 /* APODHomeRouter.swift */; };
-		ACD859CF271C767F00EC78B6 /* NasaAPOD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACD859CD271C767F00EC78B6 /* NasaAPOD.xcdatamodeld */; };
 		ACD859D4271C769800EC78B6 /* DetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD859D0271C769800EC78B6 /* DetailViewTests.swift */; };
 		ACD859D5271C769800EC78B6 /* APODMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD859D2271C769800EC78B6 /* APODMocks.swift */; };
 		ACD859D6271C769800EC78B6 /* searchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD859D3271C769800EC78B6 /* searchViewModelTests.swift */; };
@@ -86,6 +86,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		97928C8527776F83001C332D /* NasaAPOD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NasaAPOD.xcdatamodel; sourceTree = "<group>"; };
 		ACD8591E271C75E900EC78B6 /* NasaAPOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaAPOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD85921271C75E900EC78B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACD85923271C75E900EC78B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,7 +145,6 @@
 		ACD8599A271C762100EC78B6 /* AstronomyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstronomyListViewController.swift; sourceTree = "<group>"; };
 		ACD8599B271C762100EC78B6 /* AstronomyListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AstronomyListViewController.xib; sourceTree = "<group>"; };
 		ACD8599C271C762100EC78B6 /* APODHomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODHomeRouter.swift; sourceTree = "<group>"; };
-		ACD859CE271C767F00EC78B6 /* NasaAPOD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NasaAPOD.xcdatamodel; sourceTree = "<group>"; };
 		ACD859D0271C769800EC78B6 /* DetailViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewTests.swift; sourceTree = "<group>"; };
 		ACD859D2271C769800EC78B6 /* APODMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODMocks.swift; sourceTree = "<group>"; };
 		ACD859D3271C769800EC78B6 /* searchViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchViewModelTests.swift; sourceTree = "<group>"; };
@@ -211,7 +211,7 @@
 				ACD859D7271C786000EC78B6 /* Assets.xcassets */,
 				ACD8592F271C75EA00EC78B6 /* LaunchScreen.storyboard */,
 				ACD85932271C75EA00EC78B6 /* Info.plist */,
-				ACD859CD271C767F00EC78B6 /* NasaAPOD.xcdatamodeld */,
+				97928C8427776F83001C332D /* NasaAPOD.xcdatamodeld */,
 			);
 			path = NasaAPOD;
 			sourceTree = "<group>";
@@ -646,9 +646,10 @@
 				ACD859C0271C762100EC78B6 /* APODDetailViewController.swift in Sources */,
 				ACD8599F271C762100EC78B6 /* DateTextField.swift in Sources */,
 				ACD859AA271C762100EC78B6 /* CacheManager.swift in Sources */,
+				97928C8727777F57001C332D /* APODCoreDataModel.swift in Sources */,
 				ACD859BA271C762100EC78B6 /* UIView+Extensions.swift in Sources */,
-				ACD859B6271C762100EC78B6 /* APODCoreDataModel.swift in Sources */,
 				ACD859AC271C762100EC78B6 /* NetworkClient.swift in Sources */,
+				97928C8627776F83001C332D /* NasaAPOD.xcdatamodeld in Sources */,
 				ACD85922271C75E900EC78B6 /* AppDelegate.swift in Sources */,
 				ACD859B2271C762100EC78B6 /* NetworkLogger.swift in Sources */,
 				ACD859AB271C762100EC78B6 /* APIClient.swift in Sources */,
@@ -665,7 +666,6 @@
 				ACD859A9271C762100EC78B6 /* GenericError.swift in Sources */,
 				ACD859B0271C762100EC78B6 /* HTTPNetworkResponse+Handler.swift in Sources */,
 				ACD859A6271C762100EC78B6 /* ProgressView.swift in Sources */,
-				ACD859CF271C767F00EC78B6 /* NasaAPOD.xcdatamodeld in Sources */,
 				ACD859BF271C762100EC78B6 /* APODDetailViewModel.swift in Sources */,
 				ACD859B1271C762100EC78B6 /* SessionManager.swift in Sources */,
 			);
@@ -1032,14 +1032,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		ACD859CD271C767F00EC78B6 /* NasaAPOD.xcdatamodeld */ = {
+		97928C8427776F83001C332D /* NasaAPOD.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				ACD859CE271C767F00EC78B6 /* NasaAPOD.xcdatamodel */,
+				97928C8527776F83001C332D /* NasaAPOD.xcdatamodel */,
 			);
-			currentVersion = ACD859CE271C767F00EC78B6 /* NasaAPOD.xcdatamodel */;
-			name = NasaAPOD.xcdatamodeld;
-			path = ../../../NasaAPOD/NasaAPOD/NasaAPOD.xcdatamodeld;
+			currentVersion = 97928C8527776F83001C332D /* NasaAPOD.xcdatamodel */;
+			path = NasaAPOD.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
