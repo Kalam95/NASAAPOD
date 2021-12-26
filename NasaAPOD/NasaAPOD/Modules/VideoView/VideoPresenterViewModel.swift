@@ -11,7 +11,7 @@ public struct VideoViewModel {
     private var urlString: String
 
     public var lastPathComponent: String {
-        return url?.lastPathComponent ?? ""
+        url?.lastPathComponent ?? ""
     }
     
     public init(url: String)  {

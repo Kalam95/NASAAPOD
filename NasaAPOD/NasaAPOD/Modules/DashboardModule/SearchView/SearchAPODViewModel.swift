@@ -15,10 +15,6 @@ public class SearchAPODViewModel {
         self.signal = PublishSubject<Void>()
     }
 
-    deinit {
-        holder = nil// in case of RxSwift and combine it is not requred as they handles it in them only
-    }
-
     public func sendRequest(date: Date) {
         holder = apiCleint.sendAPODRequest(date: date.getString(format: .yyyy_MM_dd))
         holder?.subscribe { [weak self] data in
