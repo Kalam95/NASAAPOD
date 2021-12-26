@@ -8,27 +8,6 @@
 import YouTubeiOSPlayerHelper
 import AVKit
 
-struct VideoViewModel {
-    var urlString: String
-
-    var lastPathComponent: String {
-        return url?.lastPathComponent ?? ""
-    }
-    
-    init(url: String)  {
-        self.urlString = url
-    }
-
-    var isYoutube: Bool {
-        urlString.contains("youtube")
-    }
-
-    var url: URL? {
-        URL(string: urlString)
-    }
-}
-
-
 class VideoPresenterController: BaseViewController {
     private let viewModel: VideoViewModel
     private let detents: [UISheetPresentationController.Detent]
@@ -45,7 +24,7 @@ class VideoPresenterController: BaseViewController {
     
     private lazy var avPlayer: AVPlayerLayer? = {
         let playerLayer = AVPlayerLayer()
-        playerLayer.frame = view.bounds
+        playerLayer.frame = CGRect(origin: CGPoint(x: 0, y:  20), size: view.bounds.size)
         playerLayer.videoGravity = .resizeAspectFill
         view.layer.addSublayer(playerLayer)
         return playerLayer
@@ -53,12 +32,11 @@ class VideoPresenterController: BaseViewController {
 
     private lazy var youtubePlayerView: YTPlayerView = {
         let playerView = YTPlayerView()
-        playerView.frame = view.bounds
         view.addSubview(playerView)
         playerView.translatesAutoresizingMaskIntoConstraints = false
         playerView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         playerView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        playerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 30).isActive = true
+        playerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
         playerView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         return playerView
     }()

@@ -8,6 +8,7 @@ class APODAPIMock: APODAPIType {
 
     internal var networkClient: NetworkClientType
     var json: [String:Any]?
+    var jsonList: [[String:Any]]?
     init(client: NetworkClientType) {
         self.networkClient = client
     }
@@ -20,7 +21,13 @@ class APODAPIMock: APODAPIType {
         return networkClient.getRequest(path: "", parameters: [:])
     }
 
-    
+    func sendApodLast50Days() -> PublishSubject<[APODDataModel]> {
+        if let json = jsonList {
+            let data = try? JSONSerialization.data(withJSONObject: json, options: [.prettyPrinted])
+            (networkClient as? NetworkClientMock)?.data = data
+        }
+        return networkClient.getRequest(path: "", parameters: [:])
+    }
 }
 
 class NetworkClientMock: NetworkClientType {

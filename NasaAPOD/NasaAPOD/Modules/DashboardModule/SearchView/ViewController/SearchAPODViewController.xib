@@ -39,7 +39,7 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="i2d-KS-qkm">
                                     <rect key="frame" x="0.0" y="30.5" width="374" height="49.5"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select a date.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5rY-Pe-8Bk" customClass="DateTextField" customModule="NasaAPOD" customModuleProvider="target">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5rY-Pe-8Bk" customClass="DateTextField" customModule="NasaAPOD" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="284" height="49.5"/>
                                             <color key="tintColor" systemColor="systemBlueColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>

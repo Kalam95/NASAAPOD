@@ -29,8 +29,8 @@ extension APODCoreDataModel {
     @NSManaged public var thumbNail: String?
 }
 
-extension APODCoreDataModel : Identifiable {
-    func toDataModel() -> APODDataModel {
+extension APODCoreDataModel: Identifiable {
+    public func toDataModel() -> APODDataModel {
         return APODDataModel(date: self.date?.getDate(format: .yyyy_MM_dd),
                              explanation: self.explanation,
                              hdurl: self.hdurl,

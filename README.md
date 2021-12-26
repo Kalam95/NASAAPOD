@@ -8,6 +8,7 @@
 ### App codsiders that, APOD can be a video or an Image, as per NASA API response(it sends media_type)
 ### App Uses CoreData for storage purpose
 ### One might require latest XCOde 13 to run the app
+### App Uses, **YoutubeiOSPlayerHelper** Library, in order to play youtube video lineks(send by NSAS API, which AVplayer was not suppotrting)
 
 ## App Flow
 ### Home Screen consists of 3 Sub Flows

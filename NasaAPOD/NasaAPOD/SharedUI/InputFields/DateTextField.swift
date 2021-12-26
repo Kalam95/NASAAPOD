@@ -37,12 +37,31 @@ class DateTextField: UITextField {
         }
     }
 
+    var plaeholderText: String = "Select a date" {
+        didSet {
+            setPlaholderText()
+        }
+    }
+
     private func initialSettings() {
         delegate = self
+        backgroundColor = .white
+        tintColor = .appThemeColor
+        textColor = .appThemeColor
         datePicker.locale = .current
         datePicker.tintColor = .appThemeColor
         datePicker.backgroundColor = .white
         datePicker.addTarget(self, action: #selector(dateDidChange), for: .valueChanged)
+        setPlaholderText()
+    }
+
+    private func setPlaholderText() {
+        placeholder = plaeholderText
+        if traitCollection.userInterfaceStyle == .dark {
+            attributedPlaceholder = NSAttributedString(string: plaeholderText,
+                                                       attributes: [.font: UIFont.systemFont(ofSize: 14),
+                                                                    .foregroundColor: UIColor.gray])
+        }
     }
 
     @objc private func dateDidChange(_ sender: UIDatePicker?) {

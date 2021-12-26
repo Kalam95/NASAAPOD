@@ -1,0 +1,25 @@
+coverage_service: cobertura_xml
+xcodeproj: NasaAPOD.xcodeproj
+scheme: NasaAPOD
+output_directory: coverage
+ignore:
+  - ../**/*/Xcode*
+  - /NasaAPOD/APILayer/Networking+Helpers/Service/NetworkLogger.swift*
+  - /NasaAPOD/Utilities+Reusable/*
+  - /NasaAPOD/Utilities+Reusable/Extensions/UI/*
+  - /NasaAPOD/CoreData/*
+  - /NasaAPOD/BaseViewController*
+  - /NasaAPOD/SharedUI/*
+  - /NasaAPOD/Modules/VideoView/VideoPresenterController.swift
+  - /NasaAPOD/Modules/DashboardModule/Last50DaysView/ViewController/*
+  - /NasaAPOD/Modules/DashboardModule/Favourites+History/TableViewCells/*
+  - /NasaAPOD/Modules/DashboardModule/Favourites+History/*
+  - /NasaAPOD/Modules/DashboardModule/APODDetailsView/Views/*
+  - /NasaAPOD/Modules/DashboardModule/SearchView/ViewController/*
+  - /NasaAPOD/Modules/DashboardModule/APODHomeRouter.swift*
+  - /NasaAPOD/AppDelegate.swift*
+  - /NasaAPOD/SceneDelegate.swift*
+  - /NasaAPOD/Assets.xcassets*
+  - /NasaAPOD/Base.lproj/LaunchScreen.storyboard*
+  - /NasaAPOD/Info.plist*
+  - /NasaAPOD/NasaAPOD.xcdatamodeld*

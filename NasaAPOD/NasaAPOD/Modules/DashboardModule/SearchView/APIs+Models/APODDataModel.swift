@@ -21,7 +21,7 @@ public struct APODDataModel: Codable {
         mediaType == .video ? thumbNail : url
     }
 
-    func covertTo(data: APODCoreDataModel) {
+    public func covertTo(data: APODCoreDataModel) {
         data.date = date?.getString(format: .yyyy_MM_dd)
         data.explanation = explanation
         data.hdurl = hdurl

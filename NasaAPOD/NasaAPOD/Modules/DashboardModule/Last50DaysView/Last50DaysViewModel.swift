@@ -8,7 +8,7 @@
 import Foundation
 
 
-class Last50DaysViewModel {
+public class Last50DaysViewModel {
     /// Filtered list on the basis of date
     private var filteredList: [APODDataModel]?
     public let signal: PublishSubject<Void>
@@ -22,7 +22,7 @@ class Last50DaysViewModel {
         }
     }
 
-    init(apiClient: APODAPIType) {
+    public init(apiClient: APODAPIType) {
         self.apiClient = apiClient
         self.signal = .init()
     }
