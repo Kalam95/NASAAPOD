@@ -4,11 +4,12 @@
 
 ### App Runs on Swift 5 + iOS 15 (for testing only traget can be changed) 
 ### App Folows MVVM+R pattern where R = router for navigation
-### App has Test cases just to show case only for 2 viewModels
+### App has Test cases just(for viewModels and few files) to show case.(by slather non - required files are added to slather ignore list)
 ### App codsiders that, APOD can be a video or an Image, as per NASA API response(it sends media_type)
 ### App Uses CoreData for storage purpose
 ### One might require latest XCOde 13 to run the app
 ### App Uses, **YoutubeiOSPlayerHelper** Library, in order to play youtube video lineks(send by NSAS API, which AVplayer was not suppotrting)
+### App Uses, **Slather via gem file** , in order to generate test report which out considering UI and other non - testable code
 
 ## App Flow
 ### Home Screen consists of 4 Sub Flows
