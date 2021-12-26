@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		97928C8627776F83001C332D /* NasaAPOD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97928C8427776F83001C332D /* NasaAPOD.xcdatamodeld */; };
 		97928C8727777F57001C332D /* APODCoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8597C271C762100EC78B6 /* APODCoreDataModel.swift */; };
+		97928C932777D15B001C332D /* Last50DaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97928C912777D15B001C332D /* Last50DaysViewController.swift */; };
+		97928C942777D15B001C332D /* Last50DaysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97928C922777D15B001C332D /* Last50DaysViewController.xib */; };
+		97928C962777D1AA001C332D /* Last50DaysViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97928C952777D1AA001C332D /* Last50DaysViewModel.swift */; };
+		97928C992777E0FD001C332D /* SearbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97928C982777E0FD001C332D /* SearbarView.swift */; };
+		97928C9B2777E111001C332D /* SearbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97928C9A2777E111001C332D /* SearbarView.xib */; };
 		ACD85922271C75E900EC78B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85921271C75E900EC78B6 /* AppDelegate.swift */; };
 		ACD85924271C75E900EC78B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD85923271C75E900EC78B6 /* SceneDelegate.swift */; };
 		ACD85931271C75EA00EC78B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD8592F271C75EA00EC78B6 /* LaunchScreen.storyboard */; };
@@ -86,6 +91,11 @@
 /* Begin PBXFileReference section */
 		97928C8527776F83001C332D /* NasaAPOD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NasaAPOD.xcdatamodel; sourceTree = "<group>"; };
 		97928C8E2777C81C001C332D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		97928C912777D15B001C332D /* Last50DaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Last50DaysViewController.swift; sourceTree = "<group>"; };
+		97928C922777D15B001C332D /* Last50DaysViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Last50DaysViewController.xib; sourceTree = "<group>"; };
+		97928C952777D1AA001C332D /* Last50DaysViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Last50DaysViewModel.swift; sourceTree = "<group>"; };
+		97928C982777E0FD001C332D /* SearbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearbarView.swift; sourceTree = "<group>"; };
+		97928C9A2777E111001C332D /* SearbarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearbarView.xib; sourceTree = "<group>"; };
 		ACD8591E271C75E900EC78B6 /* NasaAPOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaAPOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD85921271C75E900EC78B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACD85923271C75E900EC78B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +183,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97928C902777D12B001C332D /* Last50DaysView */ = {
+			isa = PBXGroup;
+			children = (
+				97928C952777D1AA001C332D /* Last50DaysViewModel.swift */,
+				97928C912777D15B001C332D /* Last50DaysViewController.swift */,
+				97928C922777D15B001C332D /* Last50DaysViewController.xib */,
+			);
+			path = Last50DaysView;
+			sourceTree = "<group>";
+		};
+		97928C972777E0E1001C332D /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				97928C9C2777E14C001C332D /* SearchBarView */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		97928C9C2777E14C001C332D /* SearchBarView */ = {
+			isa = PBXGroup;
+			children = (
+				97928C982777E0FD001C332D /* SearbarView.swift */,
+				97928C9A2777E111001C332D /* SearbarView.xib */,
+			);
+			path = SearchBarView;
+			sourceTree = "<group>";
+		};
 		ACD85915271C75E900EC78B6 = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +277,7 @@
 				ACD8595A271C762100EC78B6 /* ImagePreviewView */,
 				ACD85960271C762100EC78B6 /* Alerts */,
 				ACD85963271C762100EC78B6 /* ProgressView */,
+				97928C972777E0E1001C332D /* ViewComponents */,
 			);
 			path = SharedUI;
 			sourceTree = "<group>";
@@ -398,20 +436,21 @@
 		ACD85986271C762100EC78B6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				ACD85987271C762100EC78B6 /* HomeModule */,
+				ACD85987271C762100EC78B6 /* DashboardModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		ACD85987271C762100EC78B6 /* HomeModule */ = {
+		ACD85987271C762100EC78B6 /* DashboardModule */ = {
 			isa = PBXGroup;
 			children = (
+				97928C902777D12B001C332D /* Last50DaysView */,
+				ACD85995271C762100EC78B6 /* Favourites+History */,
 				ACD85988271C762100EC78B6 /* APODDetailsView */,
 				ACD8598D271C762100EC78B6 /* SearchView */,
-				ACD85995271C762100EC78B6 /* Favourites+History */,
 				ACD8599C271C762100EC78B6 /* APODHomeRouter.swift */,
 			);
-			path = HomeModule;
+			path = DashboardModule;
 			sourceTree = "<group>";
 		};
 		ACD85988271C762100EC78B6 /* APODDetailsView */ = {
@@ -593,9 +632,11 @@
 				ACD859CB271C762100EC78B6 /* AstronomyListViewController.xib in Resources */,
 				ACD85931271C75EA00EC78B6 /* LaunchScreen.storyboard in Resources */,
 				ACD859C1271C762100EC78B6 /* APODDetailViewController.xib in Resources */,
+				97928C942777D15B001C332D /* Last50DaysViewController.xib in Resources */,
 				ACD859A5271C762100EC78B6 /* PrimaryAlertView.xib in Resources */,
 				ACD859C9271C762100EC78B6 /* AstronomyDataCell.xib in Resources */,
 				ACD859A0271C762100EC78B6 /* ImagePreviewView.xib in Resources */,
+				97928C9B2777E111001C332D /* SearbarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,7 +671,9 @@
 				ACD859AE271C762100EC78B6 /* Encodable+Conversions.swift in Sources */,
 				ACD859CC271C762100EC78B6 /* APODHomeRouter.swift in Sources */,
 				ACD859A1271C762100EC78B6 /* ImagePreviewView.swift in Sources */,
+				97928C962777D1AA001C332D /* Last50DaysViewModel.swift in Sources */,
 				ACD859C4271C762100EC78B6 /* SearchAPODViewController.swift in Sources */,
+				97928C932777D15B001C332D /* Last50DaysViewController.swift in Sources */,
 				ACD859BB271C762100EC78B6 /* UIImageView+Download.swift in Sources */,
 				ACD859A4271C762100EC78B6 /* PrimaryAlertView.swift in Sources */,
 				ACD859B4271C762100EC78B6 /* BaseViewController.swift in Sources */,
@@ -661,6 +704,7 @@
 				ACD859B0271C762100EC78B6 /* HTTPNetworkResponse+Handler.swift in Sources */,
 				ACD859A6271C762100EC78B6 /* ProgressView.swift in Sources */,
 				ACD859BF271C762100EC78B6 /* APODDetailViewModel.swift in Sources */,
+				97928C992777E0FD001C332D /* SearbarView.swift in Sources */,
 				ACD859B1271C762100EC78B6 /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

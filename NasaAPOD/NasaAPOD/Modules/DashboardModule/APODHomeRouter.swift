@@ -46,4 +46,13 @@ class APODHomeRouter {
         source.navigationController?.pushViewController(viewController,
                                                         animated: true)
     }
+
+    func showLast50DaysView(source: UIViewController) {
+        let apiClient = APODAPI(networkClient: NetworkClient(baseUrl: AppURL.base.rawValue))
+        let viewModel = Last50DaysViewModel(apiClient: apiClient)
+        let viewController = Last50DaysViewController(viewModel: viewModel,
+                                                      router: APODHomeRouter())
+        source.navigationController?.pushViewController(viewController,
+                                                        animated: true)
+    }
 }

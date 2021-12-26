@@ -9,7 +9,8 @@ class SearchAPODViewController: BaseViewController {
     @IBOutlet weak var dateTextField: DateTextField!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var searchButton: PrimarySolidButton!
-    @IBOutlet weak var viewHistoryButton: PrimarySolidButton!
+    @IBOutlet weak var viewHistoryButton: SecondaryButton!
+    @IBOutlet weak var last50APODButton: PrimarySolidButton!
     
     let viewModel: SearchAPODViewModel
     let router: APODHomeRouter
@@ -17,7 +18,7 @@ class SearchAPODViewController: BaseViewController {
     init(viewModel: SearchAPODViewModel, router: APODHomeRouter) {
         self.viewModel = viewModel
         self.router = router
-        super.init(nibName: String(describing: SearchAPODViewController.self), bundle: nil)
+        super.init(nibName: String(describing: Self.self), bundle: nil)
     }
     
     required init?(coder: NSCoder) {
@@ -59,8 +60,8 @@ class SearchAPODViewController: BaseViewController {
         dateTextField.maximumDate = Date()
         searchButton.isEnabled = false
         title = "APOD"
-        viewHistoryButton.isEnabled = true
         addRightButtion(title: "Favourties")
+        last50APODButton.isEnabled = true
     }
 
     @IBAction func searchButtonTapped(_ sender: Any) {
@@ -73,4 +74,9 @@ class SearchAPODViewController: BaseViewController {
     @IBAction func viewHistoryButtonTapped(_ sender: Any) {
         router.showRecentHistoryView(source: self)
     }
+
+    @IBAction func last50APODButtonTapped(_ sender: Any) {
+        router.showLast50DaysView(source: self)
+    }
+    
 }

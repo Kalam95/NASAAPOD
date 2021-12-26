@@ -44,6 +44,7 @@ class MediaContainerView: UIView {
     }()
 
     func setupView(mediaType: MediaType?, url: String) {
+        imageView.image = UIImage(named: "placeholder")
         self.isHidden = false
         switch mediaType {
         case .image:

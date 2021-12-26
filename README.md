@@ -5,12 +5,13 @@
 ### App Runs on Swift 5 + iOS 15 (for testing only traget can be changed) 
 ### App Folows MVVM+R pattern where R = router for navigation
 ### App has Test cases just to show case only for 2 viewModels
+### App codsiders that, APOD can be a video or an Image, as per NASA API response(it sends media_type)
 ### App Uses CoreData for storage purpose
 ### One might require latest XCOde 13 to run the app
 
 ## App Flow
 ### Home Screen consists of 3 Sub Flows
-
+### Cell in the list will show few details only, to view full you must go to the detail screen. After few lines the lable insde cell truncates(both title and description), its on purpose to lure the user get inside the details.
 #### 1 User can select a date and tap on search to get the APOD for that Date, which will hit the api and shows him the data on next screen.
 ![Screenshot of the running app](home.png)
 ![Screenshot of the running app](homeDate.png)

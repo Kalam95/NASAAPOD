@@ -15,6 +15,7 @@ enum AppURL: String {
 enum APIKey: String {
     case date
     case api_key
+    case count
 }
 
 enum APIEndPoints: String {

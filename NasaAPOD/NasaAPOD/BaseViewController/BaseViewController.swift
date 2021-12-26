@@ -15,10 +15,23 @@ class BaseViewController: UIViewController {
         }
     }
 
+    var titleColor: UIColor = .white {
+        willSet {
+            navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: newValue,
+                                                                       .font: titleFont]
+        }
+    }
+
+    var titleFont: UIFont = .systemFont(ofSize: 17, weight: .bold) {
+        willSet {
+            navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: titleColor,
+                                                                       .font: newValue]
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white,
-                                                                   .font: UIFont.systemFont(ofSize: 17, weight: .bold)]
+        titleColor = .white
     }
 
     
@@ -60,5 +73,18 @@ class BaseViewController: UIViewController {
 
     @objc func rightBarButtonPressed() {
         // override to write
+    }
+
+    func getColoredNavBar() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .appThemeColor
+        appearance.titleTextAttributes = [.font: UIFont.boldSystemFont(ofSize: 20.0),
+                                          .foregroundColor: UIColor.white]
+
+        // Customizing our navigation bar
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
 }

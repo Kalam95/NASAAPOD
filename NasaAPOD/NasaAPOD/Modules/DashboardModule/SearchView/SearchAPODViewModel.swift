@@ -8,6 +8,7 @@ public class SearchAPODViewModel {
     private var data: APODDataModel?
     public let signal: PublishSubject<Void>
     private var holder: PublishSubject<APODDataModel>?
+    private var holders: PublishSubject<[APODDataModel]>?
 
     public init(apiCleint: APODAPIType) {
         self.apiCleint = apiCleint

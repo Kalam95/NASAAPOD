@@ -11,8 +11,8 @@ public struct GenericErrorData: Codable {
 
     private enum CodingKeys: String, CodingKey {
         case status
-        case message
-        case errorCode
+        case message = "msg"
+        case errorCode = "code"
     }
 
     public init(message: String?, status: String?, errorCode: String?) {

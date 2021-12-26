@@ -17,7 +17,7 @@ public class SecondaryButton: UIButton {
         didSet {
             if showBorder {
                 layer.borderWidth = 1
-                layer.borderColor = UIColor.appThemeColor.cgColor
+                layer.borderColor = UIColor.white.cgColor
             }
         }
     }
@@ -42,9 +42,14 @@ public class SecondaryButton: UIButton {
         clipsToBounds = true
         layer.cornerRadius = 10
         titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
-        titleLabel?.textColor = .appThemeColor
         backgroundColor = .clear
-        setTitleColor(.appThemeColor, for: .normal)
+        showBorder = true
+    }
+
+    public override func willMove(toSuperview newSuperview: UIView?) {
+        super.willMove(toSuperview: newSuperview)
+        setTitleColor(.white, for: .normal)
+        setTitleColor(.lightText, for: .disabled)
     }
 
     override public func layoutSubviews() {

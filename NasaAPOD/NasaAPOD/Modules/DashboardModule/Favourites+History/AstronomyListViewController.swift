@@ -78,7 +78,7 @@ class AstronomyListViewController: BaseViewController {
         label.font = .systemFont(ofSize: 18, weight: .semibold)
         label.numberOfLines = 0
         label.textAlignment = .center
-        label.text = "Currently you do not have any saved data for this section"
+        label.text = "Currently you do not have any \(title ?? "saved data")"
         return label
     }
 }
