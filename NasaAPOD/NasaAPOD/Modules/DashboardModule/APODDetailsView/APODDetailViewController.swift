@@ -37,7 +37,7 @@ class APODDetailViewController: BaseViewController {
         title = viewModel.date
         titleLabel.text = viewModel.title
         descriptionLabel.text = viewModel.explanation.appending(viewModel.explanation)
-        mediaView.setupView(mediaType: viewModel.type ?? .none, url: viewModel.url)
+        mediaView.setupView(mediaType: viewModel.type ?? .none, url: viewModel.imageURL)
         updateFavouritesButton()
     }
 
@@ -54,6 +54,10 @@ class APODDetailViewController: BaseViewController {
     }
 
     @objc private func showImagePreview() {
+        if viewModel.type == .video {
+            router.showVideo(url: viewModel.url, source: self)
+            return
+        }
         ImagePreviewView.showImagePreviewView(images: [viewModel.url])
     }
 

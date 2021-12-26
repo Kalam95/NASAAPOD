@@ -26,7 +26,7 @@ class AstronomyDataCell: UITableViewCell {
         }
         dateLabel.text = data.date?.getString(format: .dd_MMM_yyyy)
         mediaView.setupView(mediaType: data.mediaType ?? .image,
-                                   url: data.url ?? "")
+                            url: data.imageURL ?? "")
         nameLabel.text = data.title ?? "N/A"
         subtTitleLabel.text = data.explanation
     }

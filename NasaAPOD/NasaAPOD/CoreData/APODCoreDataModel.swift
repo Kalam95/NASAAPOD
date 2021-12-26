@@ -26,6 +26,7 @@ extension APODCoreDataModel {
     @NSManaged public var isFavourite: Bool
     @NSManaged public var explanation: String?
     @NSManaged public var date: String?
+    @NSManaged public var thumbNail: String?
 }
 
 extension APODCoreDataModel : Identifiable {
@@ -36,6 +37,7 @@ extension APODCoreDataModel : Identifiable {
                              mediaType: MediaType(rawValue: self.mediaType ?? ""),
                              url: self.url,
                              title: self.title,
+                             thumbNail: thumbNail,
                              isFavourite: self.isFavourite)
     }
 }

@@ -46,32 +46,32 @@ class MediaContainerView: UIView {
     func setupView(mediaType: MediaType?, url: String) {
         imageView.image = UIImage(named: "placeholder")
         self.isHidden = false
+        playerLayer.isHidden = true
         switch mediaType {
         case .image:
             playIcon.isHidden = true
-            playerLayer.isHidden = true
             imageView.isHidden = false
             imageView.setImage(from: url)
         case .video:
-            setupVideoPreview(url: url)
+            playIcon.isHidden = false
+            imageView.setImage(from: url)
         default:
             playIcon.isHidden = true
-            playerLayer.isHidden = true
-            imageView.isHidden = true
         }
     }
 
-    private func setupVideoPreview(url: String) {
-        playIcon.isHidden = false
-        playerLayer.isHidden = false
-        imageView.isHidden = true
-        if let url = URL(string: url) {
-            playerLayer.player = AVPlayer(url: url)
-            playerLayer.player?.isMuted = true
-            playerLayer.player?.seek(to: .zero)
-            DispatchQueue.main.async {[weak self] in
-                self?.playerLayer.frame = self?.bounds ?? .zero
-            }
-        }
-    }
+//    private func setupVideoPreview(url: String) {
+//        playIcon.isHidden = false
+//        playerLayer.isHidden = false
+//        imageView.isHidden = true
+//         in case we wann preview the videos on cell or detail screen only
+//        if let url = URL(string: url) {
+//            playerLayer.player = AVPlayer(url: url)
+//            playerLayer.player?.isMuted = true
+//            playerLayer.player?.seek(to: .zero)
+//            DispatchQueue.main.async {[weak self] in
+//                self?.playerLayer.frame = self?.bounds ?? .zero
+//            }
+//        }
+//    }
 }

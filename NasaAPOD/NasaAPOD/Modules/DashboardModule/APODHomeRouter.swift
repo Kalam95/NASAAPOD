@@ -1,19 +1,14 @@
 // Created by mehboob Alam
 
-import Foundation
-import AVKit
+import UIKit
 
 class APODHomeRouter {
 
-    func showVideo(data: APODDataModel, source: UIViewController) {
-        guard let url = URL(string: data.url ?? "") else { return }
-        let controller = AVPlayerViewController()
-        controller.videoGravity = .resizeAspect
-        controller.player = AVPlayer(url: url)
-        controller.player?.isMuted = false
-        source.present(controller, animated: true, completion: {[weak controller] in
-            controller?.player?.play()
-        })
+    func showVideo(url: String, source: UIViewController) {
+        let viewModel = VideoViewModel(url: url)
+        let videoController = VideoPresenterController(detents: [.large(), .medium()],
+                                                      viewModel: viewModel)
+        source.present(videoController, animated: true, completion: nil)
     }
 
     func showRecentHistoryView( source: UIViewController) {

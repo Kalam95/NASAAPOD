@@ -21,12 +21,17 @@ class APODAPI: APODAPIType {
     func sendAPODRequest(date: String) -> PublishSubject<APODDataModel> {
         networkClient.getRequest(path: APIEndPoints.apod.rawValue ,
                                  parameters: [APIKey.api_key.rawValue: API_KEY,
+                                              APIKey.thumbs.rawValue: true.description,
                                               APIKey.date.rawValue:  date])
     }
 
     func sendApodLast50Days() -> PublishSubject<[APODDataModel]> {
-        networkClient.getRequest(path: APIEndPoints.apod.rawValue ,
+        let endDate = Date().getString(format: .yyyy_MM_dd)
+        let startDate = Date().addingTimeInterval(-50*24*60*60).getString(format: .yyyy_MM_dd)
+        return networkClient.getRequest(path: APIEndPoints.apod.rawValue ,
                                  parameters: [APIKey.api_key.rawValue: API_KEY,
-                                              APIKey.count.rawValue:  50.description])
+                                              APIKey.thumbs.rawValue: true.description,
+                                              APIKey.startDate.rawValue: startDate,
+                                              APIKey.endDate.rawValue: endDate])
     }
 }

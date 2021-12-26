@@ -6,6 +6,7 @@
         <attribute name="hdurl" optional="YES" attributeType="String"/>
         <attribute name="isFavourite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="mediaType" optional="YES" attributeType="String"/>
+        <attribute name="thumbNail" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
         <attribute name="url" optional="YES" attributeType="String"/>
         <uniquenessConstraints>
@@ -15,6 +16,6 @@
         </uniquenessConstraints>
     </entity>
     <elements>
-        <element name="APODCoreDataModel" positionX="-63" positionY="-18" width="128" height="134"/>
+        <element name="APODCoreDataModel" positionX="-63" positionY="-18" width="128" height="149"/>
     </elements>
 </model>

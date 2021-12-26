@@ -16,6 +16,9 @@ enum APIKey: String {
     case date
     case api_key
     case count
+    case thumbs
+    case startDate = "start_date"
+    case endDate = "end_date"
 }
 
 enum APIEndPoints: String {

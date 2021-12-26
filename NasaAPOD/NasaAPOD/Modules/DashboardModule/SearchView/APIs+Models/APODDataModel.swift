@@ -11,19 +11,25 @@ public struct APODDataModel: Codable {
     public var url: String?
     public var title: String?
     public var isFavourite: Bool = false
+    public var thumbNail: String?
 
     public enum CodingKeys: String, CodingKey {
-        case mediaType = "media_type", date, title, url, hdurl, explanation
+        case mediaType = "media_type", thumbNail = "thumbnail_url" , date, title, url, hdurl, explanation
+    }
+
+    public var imageURL: String? {
+        mediaType == .video ? thumbNail : url
     }
 
     func covertTo(data: APODCoreDataModel) {
-        data.date = self.date?.getString(format: .yyyy_MM_dd)
-        data.explanation = self.explanation
-        data.hdurl = self.hdurl
-        data.mediaType = self.mediaType?.rawValue
-        data.url = self.url
-        data.title = self.title
-        data.isFavourite = self.isFavourite
+        data.date = date?.getString(format: .yyyy_MM_dd)
+        data.explanation = explanation
+        data.hdurl = hdurl
+        data.mediaType = mediaType?.rawValue
+        data.url = url
+        data.title = title
+        data.isFavourite = isFavourite
+        data.thumbNail = thumbNail
     }
 
     public init(date: Date?,
@@ -32,6 +38,7 @@ public struct APODDataModel: Codable {
                 mediaType: MediaType?,
                 url: String?,
                 title: String?,
+                thumbNail: String?,
                 isFavourite: Bool = false) {
         self.date = date
         self.explanation = explanation
@@ -40,6 +47,7 @@ public struct APODDataModel: Codable {
         self.url = url
         self.title = title
         self.isFavourite = isFavourite
+        self.thumbNail = thumbNail
     }
 }
 

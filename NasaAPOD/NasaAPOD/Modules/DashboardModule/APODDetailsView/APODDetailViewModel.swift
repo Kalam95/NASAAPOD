@@ -44,6 +44,14 @@ public class APODDetailViewModel {
         isFavourite ? "Remove from favourites" : "Add to Favourites"
     }
 
+    public var thumNailURL: String {
+        data.thumbNail ?? ""
+    }
+
+    public var imageURL: String {
+        data.imageURL ?? ""
+    }
+
     public func updateDatabase() {
         data.isFavourite = !isFavourite
         CoreDataManager.shared.save(data: data)
