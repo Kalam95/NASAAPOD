@@ -13,6 +13,7 @@ class Date_StringExtensionTest: XCTestCase {
         let dateSTR = "2021-10-20"
         XCTAssertEqual(dateSTR.changeDateFormat(fromFromat: .yyyy_MM_dd, toFormat: .dd_MMM_yyyy), "20 Oct, 2021")
         XCTAssertEqual(DateFormat.hhmm_a.rawValue, "h:mm a")
+        XCTAssertEqual(" ".changeDateFormat(fromFromat: .yyyy_MM_dd, toFormat: .dd_MMM_yyyy),"")
         // get string and get date methods were checked already in VMS, no need to duplicate the test.
     }
 }
