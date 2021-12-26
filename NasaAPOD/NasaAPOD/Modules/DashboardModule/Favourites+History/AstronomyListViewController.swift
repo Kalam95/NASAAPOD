@@ -12,7 +12,7 @@ public enum ListType {
 class AstronomyListViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var dateTextField: DateTextField!
+    @IBOutlet weak var searchbarView: SearbarView!
     
     private let viewModel: AstronomyListViewModel
     private let router: APODHomeRouter
@@ -47,7 +47,7 @@ class AstronomyListViewController: BaseViewController {
         viewModel.signal.subscribe(onNext: {[weak self] _ in
             self?.updateView()
         })
-        dateTextField.value.subscribe(onNext: {[weak self] date in
+        searchbarView.date.subscribe(onNext: {[weak self] date in
             self?.viewModel.filter(forDate: date)
             self?.updateView()
         })
@@ -55,7 +55,7 @@ class AstronomyListViewController: BaseViewController {
 
     private func setupUIView() {
         title = viewModel.viewType == .history ? "Recent Searches" : "Favourites"
-        dateTextField.isClearButtonVisisble = true
+        searchbarView.isClearButtonVisisble = true
         tableView.registerCell(type: AstronomyDataCell.self)
         tableView.estimatedRowHeight = UITableView.automaticDimension
         tableView.rowHeight = UITableView.automaticDimension

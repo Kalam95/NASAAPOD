@@ -44,6 +44,7 @@ class Last50DaysViewModel {
     public func filter(forDate date: Date?) {
         if date == nil {
             filteredList = dataList
+            return
         }
         filteredList = dataList?.filter({ $0.date?.getString(format: .yyyy_MM_dd) == date?.getString(format: .yyyy_MM_dd)}) ?? []
     }

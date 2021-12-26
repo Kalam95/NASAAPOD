@@ -17,6 +17,16 @@ public class SearbarView: UIView {
         dateField.value
     }
 
+    var isClearButtonVisisble: Bool {
+        get {
+            dateField.isClearButtonVisisble
+        }
+        set {
+            dateField.isClearButtonVisisble = newValue
+        }
+    }
+
+
     public var infoText: String? {
         willSet {
             infoLabel.text = newValue

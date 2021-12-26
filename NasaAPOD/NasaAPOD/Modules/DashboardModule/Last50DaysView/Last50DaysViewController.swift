@@ -53,6 +53,7 @@ class Last50DaysViewController: BaseViewController {
 
     private func setupUIView() {
         title = "Last 50 APODs"
+        searchBarView.isClearButtonVisisble = true
         barTintColor = .white
         tableView.registerCell(type: AstronomyDataCell.self)
         tableView.estimatedRowHeight = UITableView.automaticDimension
