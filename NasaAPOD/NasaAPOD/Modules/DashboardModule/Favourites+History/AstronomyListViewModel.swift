@@ -7,8 +7,6 @@
 import Foundation
 
 public class AstronomyListViewModel {
-
-    
     /// saved data list from Coredata Module
     private var dataList: [APODDataModel]? {
         willSet {
@@ -19,7 +17,6 @@ public class AstronomyListViewModel {
     /// Filtered list on the basis of date
     private var filteredList: [APODDataModel]?
     public let signal: PublishSubject<Void>
-
     let viewType: ListType
 
     init(viewType: ListType) {

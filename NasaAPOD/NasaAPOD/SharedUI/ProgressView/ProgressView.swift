@@ -23,7 +23,7 @@ class ProgressView: UIView {
     func settingsForActivityView() {
         fromNib(type: Self.self)
         containerView.roundedBorders(radius: 20)
-        containerView.applyDropShadow(radius: 20)
+        containerView.applyDropShadow(radius: 20) // an expensive and dynamic shadow.
         activityIndicatorView.startAnimating()
     }
 }

@@ -40,14 +40,6 @@ class MediaContainerView: UIView {
         }
     }
 
-    private func getPlayerLayer() -> AVPlayerLayer {
-        let layer = AVPlayerLayer()
-        layer.frame = self.bounds
-        layer.videoGravity = .resizeAspectFill
-        self.layer.insertSublayer(layer, at: 0)
-        return layer
-    }
-
     private func getPlaiIconImage() -> UIImageView {
         let image = UIImageView(image: UIImage(named: "playIcon"))
         image.contentMode = .scaleAspectFit
@@ -89,5 +81,13 @@ class MediaContainerView: UIView {
 //                self?.playerLayer.frame = self?.bounds ?? .zero
 //            }
 //        }
+//    }
+
+//    private func getPlayerLayer() -> AVPlayerLayer {
+//        let layer = AVPlayerLayer()
+//        layer.frame = self.bounds
+//        layer.videoGravity = .resizeAspectFill
+//        self.layer.insertSublayer(layer, at: 0)
+//        return layer
 //    }
 }

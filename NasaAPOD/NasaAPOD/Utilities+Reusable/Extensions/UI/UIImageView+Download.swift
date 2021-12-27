@@ -17,7 +17,6 @@ extension UIImageView {
             DispatchQueue.main.async { [weak self] in
                 self?.image = image
             }
-            return
         }
         URLSession.shared.downloadTask(with: url) { responseURL, response, error in
             guard let responseURL = responseURL,

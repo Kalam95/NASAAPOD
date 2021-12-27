@@ -4,11 +4,10 @@ import UIKit
 
 class APODHomeRouter {
 
-    func showVideo(url: String, source: UIViewController) {
-        let viewModel = VideoViewModel(url: url)
-        let videoController = VideoPresenterController(detents: [.large(), .medium()],
-                                                      viewModel: viewModel)
-        source.present(videoController, animated: true, completion: nil)
+    func startJourney(source: UIWindow) {
+        let viewModel = SearchAPODViewModel(apiCleint: APODAPI(networkClient: NetworkClient(baseUrl: AppURL.base.rawValue)))
+        let viewConntroller = SearchAPODViewController(viewModel: viewModel, router: APODHomeRouter())
+        source.rootViewController = UINavigationController(rootViewController: viewConntroller)
     }
 
     func showRecentHistoryView( source: UIViewController) {
@@ -20,18 +19,10 @@ class APODHomeRouter {
 
     func showFavouritesView(source: UIViewController) {
         let viewModel = AstronomyListViewModel(viewType: .favourites)
-        let vc = AstronomyListViewController(detents: [.large()],
-                                             viewModel: viewModel,
+        let vc = AstronomyListViewController(viewModel: viewModel,
                                              router: APODHomeRouter())
         source.present(UINavigationController(rootViewController: vc),
                        animated: true, completion: nil)
-    }
-
-    func startJourney(source: UIWindow) {
-        let viewModel = SearchAPODViewModel(apiCleint: APODAPI(networkClient: NetworkClient(baseUrl: AppURL.base.rawValue)))
-        let viewConntroller = SearchAPODViewController(viewModel: viewModel, router: APODHomeRouter())
-        source.rootViewController = UINavigationController(rootViewController: viewConntroller)
-        
     }
 
     func showDetailView(data: APODDataModel, source: UIViewController) {
@@ -49,5 +40,12 @@ class APODHomeRouter {
                                                       router: APODHomeRouter())
         source.navigationController?.pushViewController(viewController,
                                                         animated: true)
+    }
+
+    func showVideo(url: String, source: UIViewController) {
+        let viewModel = VideoViewModel(url: url)
+        let videoController = VideoPresenterController(detents: [.large(), .medium()],
+                                                      viewModel: viewModel)
+        source.present(videoController, animated: true, completion: nil)
     }
 }

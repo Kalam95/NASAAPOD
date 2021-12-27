@@ -16,12 +16,10 @@ class AstronomyListViewController: BaseViewController {
     
     private let viewModel: AstronomyListViewModel
     private let router: APODHomeRouter
-    private let detents: [UISheetPresentationController.Detent]
 
-    init(detents: [UISheetPresentationController.Detent] = [.large()], viewModel: AstronomyListViewModel, router: APODHomeRouter) {
+    init(viewModel: AstronomyListViewModel, router: APODHomeRouter) {
         self.viewModel = viewModel
         self.router = router
-        self.detents = detents
         super.init(nibName: String(describing: Self.self), bundle: .main)
     }
     
@@ -32,8 +30,16 @@ class AstronomyListViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindView()
+        NotificationCenter.default.removeObserver(self)
         setupUIView()
         viewModel.getData()
+        if navigationController?.viewControllers.count ?? 0 <= 1 {
+            addRightButtion(title: "Cancel")
+        }
+    }
+
+    override func rightBarButtonPressed() {
+        dismiss(animated: true, completion: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -60,11 +66,10 @@ class AstronomyListViewController: BaseViewController {
         tableView.estimatedRowHeight = UITableView.automaticDimension
         tableView.rowHeight = UITableView.automaticDimension
         barTintColor = .white
-        if let sheetController = self.presentationController as? UISheetPresentationController {
-            sheetController.detents = detents
-            sheetController.preferredCornerRadius = 25
-            sheetController.prefersGrabberVisible = true
-        }
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
 
     private func updateView() {

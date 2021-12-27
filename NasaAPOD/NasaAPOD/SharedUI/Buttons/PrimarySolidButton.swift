@@ -32,6 +32,6 @@ public class PrimarySolidButton: UIButton {
         clipsToBounds = true
         setTitleColor(.appThemeColor, for: .normal)
         backgroundColor = UIColor.white
-        applyDropShadow(radius: 10)
+        applyDropShadow(radius: 10) // an expensive and dynamic shadow.
     }
 }
