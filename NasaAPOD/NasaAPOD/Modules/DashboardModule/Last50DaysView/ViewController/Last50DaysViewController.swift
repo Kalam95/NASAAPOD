@@ -45,7 +45,7 @@ class Last50DaysViewController: BaseViewController {
                 self?.navigationController?.popViewController(animated: true)
             }))
         })
-        searchBarView.date.subscribe(onNext: {[weak self] date in
+        searchBarView.dateField.value.subscribe(onNext: {[weak self] date in
             self?.viewModel.filter(forDate: date)
             self?.updateView()
         })

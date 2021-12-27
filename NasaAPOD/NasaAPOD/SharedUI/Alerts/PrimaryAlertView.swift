@@ -31,8 +31,9 @@ open class PrimaryAlertView: UIView {
         mainContainerView.applyDropShadow(radius: 20) // an expensive and dynamic shadow.
         mainContainerView.roundedBorders(radius: 20)
         backgroundColor = .clear
-        headingLabel.textColor = UIColor.black
-
+        headingLabel.textColor = UIColor.systemRed
+        headingLabel.font = .systemFont(ofSize: 16, weight: .bold)
+        descriptionLabel.textColor = .appThemeColor.withAlphaComponent(0.7)
     }
 
     open override func willMove(toSuperview newSuperview: UIView?) {

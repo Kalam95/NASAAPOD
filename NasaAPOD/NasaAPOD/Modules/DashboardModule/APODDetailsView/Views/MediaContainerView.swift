@@ -6,20 +6,49 @@ import AVFoundation
 
 /// A component view to show Media data(image or viedeo)
 class MediaContainerView: UIView {
-    private lazy var imageView: UIImageView = {
-        let image = UIImageView()
-        image.contentMode = .scaleAspectFill
-        addSubview(image)
-        image.clipsToBounds = true
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        image.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        image.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        image.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        return image
-    }()
+    private weak var imageView: UIImageView?
+    private weak var playIcon: UIImageView?
+//  private(set) weak var playerLayer: AVPlayerLayer?
 
-    private lazy var playIcon: UIImageView = {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        commonInit()
+    }
+
+    private func commonInit() {
+        imageView = getMediaImageView()
+        playIcon = getPlaiIconImage()
+    }
+    func setupView(mediaType: MediaType?, url: String) {
+        imageView?.image = UIImage(named: "placeholder")
+        self.isHidden = false
+        switch mediaType {
+        case .image:
+            playIcon?.isHidden = true
+            imageView?.isHidden = false
+            imageView?.setImage(from: url)
+        case .video:
+            playIcon?.isHidden = false
+            imageView?.setImage(from: url)
+        default:
+            playIcon?.isHidden = true
+        }
+    }
+
+    private func getPlayerLayer() -> AVPlayerLayer {
+        let layer = AVPlayerLayer()
+        layer.frame = self.bounds
+        layer.videoGravity = .resizeAspectFill
+        self.layer.insertSublayer(layer, at: 0)
+        return layer
+    }
+
+    private func getPlaiIconImage() -> UIImageView {
         let image = UIImageView(image: UIImage(named: "playIcon"))
         image.contentMode = .scaleAspectFit
         addSubview(image)
@@ -32,32 +61,19 @@ class MediaContainerView: UIView {
         image.layer.cornerRadius = 20
         image.clipsToBounds = true
         return image
-    }()
+    }
 
-    
-    private(set) lazy var playerLayer: AVPlayerLayer = {
-        let layer = AVPlayerLayer()
-        layer.frame = self.bounds
-        layer.videoGravity = .resizeAspectFill
-        self.layer.insertSublayer(layer, at: 0)
-        return layer
-    }()
-
-    func setupView(mediaType: MediaType?, url: String) {
-        imageView.image = UIImage(named: "placeholder")
-        self.isHidden = false
-        playerLayer.isHidden = true
-        switch mediaType {
-        case .image:
-            playIcon.isHidden = true
-            imageView.isHidden = false
-            imageView.setImage(from: url)
-        case .video:
-            playIcon.isHidden = false
-            imageView.setImage(from: url)
-        default:
-            playIcon.isHidden = true
-        }
+    private func getMediaImageView() -> UIImageView {
+        let image = UIImageView()
+        image.contentMode = .scaleAspectFill
+        addSubview(image)
+        image.clipsToBounds = true
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        image.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        image.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        image.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        return image
     }
 
 //    private func setupVideoPreview(url: String) {

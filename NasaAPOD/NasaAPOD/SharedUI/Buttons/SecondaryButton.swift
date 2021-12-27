@@ -41,7 +41,6 @@ public class SecondaryButton: UIButton {
     private func commonInit() {
         clipsToBounds = true
         layer.cornerRadius = 10
-        titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
         backgroundColor = .clear
         showBorder = true
     }

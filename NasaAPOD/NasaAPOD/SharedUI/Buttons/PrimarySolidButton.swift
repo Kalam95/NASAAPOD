@@ -32,7 +32,6 @@ public class PrimarySolidButton: UIButton {
         clipsToBounds = true
         setTitleColor(.appThemeColor, for: .normal)
         backgroundColor = UIColor.white
-        titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
         applyDropShadow(radius: 10)
     }
 }

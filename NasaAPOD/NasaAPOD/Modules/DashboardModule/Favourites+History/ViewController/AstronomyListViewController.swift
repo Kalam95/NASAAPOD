@@ -47,7 +47,7 @@ class AstronomyListViewController: BaseViewController {
         viewModel.signal.subscribe(onNext: {[weak self] _ in
             self?.updateView()
         })
-        searchbarView.date.subscribe(onNext: {[weak self] date in
+        searchbarView.dateField.value.subscribe(onNext: {[weak self] date in
             self?.viewModel.filter(forDate: date)
             self?.updateView()
         })

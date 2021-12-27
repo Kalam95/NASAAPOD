@@ -10,12 +10,8 @@ import UIKit
 /// Simple Header View for search field
 public class SearbarView: UIView {
 
-    @IBOutlet private weak var dateField: DateTextField!
+    @IBOutlet weak var dateField: DateTextField!
     @IBOutlet private weak var infoLabel: UILabel!
-
-    public var date: PublishSubject<Date?> {
-        dateField.value
-    }
 
     var isClearButtonVisisble: Bool {
         get {

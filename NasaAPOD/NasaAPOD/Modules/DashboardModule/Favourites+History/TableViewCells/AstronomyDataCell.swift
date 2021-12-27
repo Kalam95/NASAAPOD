@@ -9,7 +9,7 @@ class AstronomyDataCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var mediaView: MediaContainerView!
-    @IBOutlet var imagViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var imagViewHeight: NSLayoutConstraint!
     @IBOutlet weak var subtTitleLabel: UILabel!
 
     override func awakeFromNib() {
