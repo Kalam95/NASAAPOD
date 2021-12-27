@@ -44,6 +44,7 @@
             **5.1 User can click on the media, to view media on full screen zoom-in/out is supported** 
             **5.2 User can click on the media, to view Video on full screen (AVplayer for normal video url and YoutubeHelper for Youtube linkes)[swipe down to dismiss view]** 
             **5.3 User can add or remove this APOD from favourites**
+            ***If you view any APOD in details it will be saved in Core Data(I consider it to be a search history)***
 ![Screenshot of the running app](detailsImage.png)
 ![Screenshot of the running app](detailsViewVideo.png)
 ![Screenshot of the running app](AddedToFavourites.png)
