@@ -10,7 +10,7 @@
 ### One might require latest XCOde 13 to run the app
 ### App Uses, **YoutubeiOSPlayerHelper** Library, in order to play youtube video lineks(send by NSAS API, which AVplayer was not suppotrting)
 ### App Uses, **Slather via gem file** , in order to generate test report which out considering UI and other non - testable code
-### someplaces I used synamic shadow , to views and buttons, its just for UI, I know they are expensive, and in general i do not use them.
+### someplaces I used Dynamic shadow , to views and buttons, its just for UI, I know they are expensive, and in general i do not use them.
 
 ## App Flow
 ### Home Screen consists of 4 Sub Flows
