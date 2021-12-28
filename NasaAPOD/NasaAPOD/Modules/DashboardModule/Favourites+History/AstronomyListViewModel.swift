@@ -16,12 +16,17 @@ public class AstronomyListViewModel {
     
     /// Filtered list on the basis of date
     private var filteredList: [APODDataModel]?
-    public private(set) var signal: PublishSubject<Void>
+    public private(set) var signal: PublishSubject<Void>!
     let viewType: ListType
 
     init(viewType: ListType) {
         self.viewType = viewType
         self.signal = PublishSubject()
+    }
+
+    deinit {
+        signal.subscribe(onNext: nil, onError: nil, onComplete: nil)
+        signal = nil
     }
 
     func getData() {

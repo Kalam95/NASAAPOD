@@ -49,6 +49,10 @@ class AstronomyListViewController: BaseViewController {
         }
     }
 
+    deinit {
+        searchbarView.dateField.clearContext()
+    }
+
     private func bindView() {
         viewModel.signal.subscribe(onNext: {[weak self] _ in
             self?.updateView()

@@ -10,7 +10,7 @@ class DateTextField: UITextField {
     var dateType: UIDatePicker.Mode = .date
     var pickerStye: UIDatePickerStyle = .inline
     var dateFormate: DateFormat = .dd_MMM_yyyy
-    private(set) var value: PublishSubject<Date?> = {PublishSubject()}()
+    private(set) var value: PublishSubject<Date?>! = {PublishSubject()}()
     var isClearButtonVisisble: Bool = false
     var date: Date? {
         text?.isEmpty != false ? nil : datePicker.date
@@ -41,6 +41,11 @@ class DateTextField: UITextField {
         didSet {
             setPlaholderText()
         }
+    }
+
+    func clearContext() {
+        value.subscribe(onNext: nil, onError: nil, onComplete: nil)
+        value = nil
     }
 
     private func initialSettings() {

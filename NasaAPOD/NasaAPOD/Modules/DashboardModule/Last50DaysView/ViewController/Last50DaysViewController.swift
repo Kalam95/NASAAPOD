@@ -25,6 +25,10 @@ class Last50DaysViewController: BaseViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    deinit {
+        searchBarView.dateField.clearContext()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         bindView()

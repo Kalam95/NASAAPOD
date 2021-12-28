@@ -11,7 +11,7 @@ import Foundation
 public class Last50DaysViewModel {
     /// Filtered list on the basis of date
     private var filteredList: [APODDataModel]?
-    public private(set) var signal: PublishSubject<Void>
+    public private(set) var signal: PublishSubject<Void>!
     private let apiClient: APODAPIType
     private var holder: PublishSubject<[APODDataModel]>?
 
@@ -25,6 +25,11 @@ public class Last50DaysViewModel {
     public init(apiClient: APODAPIType) {
         self.apiClient = apiClient
         self.signal = .init()
+    }
+
+    deinit {
+        signal.subscribe(onNext: nil, onError: nil, onComplete: nil)
+        signal = nil
     }
 
     public func sendRequestForLast50Images() {
