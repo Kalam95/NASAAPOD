@@ -26,7 +26,6 @@ public class AstronomyListViewModel {
 
     deinit {
         signal.subscribe(onNext: nil, onError: nil, onComplete: nil)
-        signal = nil
     }
 
     func getData() {

@@ -29,7 +29,6 @@ public class Last50DaysViewModel {
 
     deinit {
         signal.subscribe(onNext: nil, onError: nil, onComplete: nil)
-        signal = nil
     }
 
     public func sendRequestForLast50Images() {

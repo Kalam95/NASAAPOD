@@ -16,7 +16,6 @@ public class SearchAPODViewModel {
 
     deinit {
         signal.subscribe(onNext: nil, onError: nil, onComplete: nil)
-        signal = nil
     }
 
     public func sendRequest(date: Date) {
