@@ -11,7 +11,7 @@ import Foundation
 public class Last50DaysViewModel {
     /// Filtered list on the basis of date
     private var filteredList: [APODDataModel]?
-    public let signal: PublishSubject<Void>
+    public private(set) var signal: PublishSubject<Void>
     private let apiClient: APODAPIType
     private var holder: PublishSubject<[APODDataModel]>?
 

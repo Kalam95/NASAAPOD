@@ -1,12 +1,11 @@
 // Created by mehboob Alam
 
 import Foundation
-import CoreMIDI
 
 public class SearchAPODViewModel {
     private let apiCleint: APODAPIType
     private var data: APODDataModel?
-    public let signal: PublishSubject<Void>
+    public private(set) var signal: PublishSubject<Void>
     private var holder: PublishSubject<APODDataModel>?
     private var holders: PublishSubject<[APODDataModel]>?
 

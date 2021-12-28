@@ -16,7 +16,7 @@ public class AstronomyListViewModel {
     
     /// Filtered list on the basis of date
     private var filteredList: [APODDataModel]?
-    public let signal: PublishSubject<Void>
+    public private(set) var signal: PublishSubject<Void>
     let viewType: ListType
 
     init(viewType: ListType) {

@@ -10,7 +10,7 @@ class DateTextField: UITextField {
     var dateType: UIDatePicker.Mode = .date
     var pickerStye: UIDatePickerStyle = .inline
     var dateFormate: DateFormat = .dd_MMM_yyyy
-    let value: PublishSubject<Date?> = {PublishSubject()}()
+    private(set) var value: PublishSubject<Date?> = {PublishSubject()}()
     var isClearButtonVisisble: Bool = false
     var date: Date? {
         text?.isEmpty != false ? nil : datePicker.date
